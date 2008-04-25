@@ -1,0 +1,9 @@
+.RSSAnything_highlighted_element {
+	background-color: #DDD;
+	border: 1px solid #999;
+}
+
+.RSSAnything_matched_element {
+	background-color: #DDD;
+	border: 1px solid red;
+}
