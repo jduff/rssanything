@@ -28,6 +28,10 @@ var RSSAnything = {
 	},
 	
 	highlightArea: function(event) {
+		var currentNode = RSSAnything.getSourceElement(event);
+		if(currentNode.hasClassName('RSSAnything') || currentNode.tagName == "BODY" || currentNode.tagName == "HTML")
+			return;
+		
 		$$('.RSSAnything_matched_element').each(function(element) {
 			element.removeClassName('RSSAnything_matched_element');
 		});
@@ -35,9 +39,11 @@ var RSSAnything = {
 		if(RSSAnything.highlightedNode != null)
 			RSSAnything.highlightedNode.removeClassName('RSSAnything_highlighted_element');
 
-		RSSAnything.highlightedNode = RSSAnything.getSourceElement(event);
+		RSSAnything.highlightedNode = currentNode;
 		
 		var pattern = RSSAnything.buildPattern(RSSAnything.highlightedNode);
+		
+		RSSAnything.captures[RSSAnything.current].value = pattern;
 		
 		RSSAnything.highlightedNode.addClassName('RSSAnything_highlighted_element');
 		
@@ -70,27 +76,63 @@ var RSSAnything = {
 	},
 	
 	selectCurrentElement: function(event) {
-		
+		if(RSSAnything.current >= RSSAnything.captures.length-1) {
+			parent.document.onmouseover = null;
+			$$('.RSSAnything_matched_element').each(function(element) {
+				element.removeClassName('RSSAnything_matched_element');
+			});
+
+			if(RSSAnything.highlightedNode != null)
+				RSSAnything.highlightedNode.removeClassName('RSSAnything_highlighted_element');
+			return
+		}
+		RSSAnything.current = RSSAnything.current + 1;
 	},
 	
+	current: 0,
+	captures: new Array(),
+	
 	addWindow: function() {
-		var mainDiv = new Element('div', { 'class': 'RSSAnything_main'}).update("RSSAnything");
-		var form = new Element('form');
-		var title = new Element('input', {'name': 'RSSAnything_title_matcher'});
+		var mainDiv = new Element('div', { 'class': 'RSSAnything_main RSSAnything'}).update("RSSAnything");
+		var form = new Element('form', {'class' : 'RSSAnything', 'action' :  'http://' + HOST + '/feeds/new'});
 		
-		form.appendChild(title);
+		form.appendChild(new Element('input', {'name' : 'url', 'type' : 'hidden', 'value' : parent.document.location.href}))
+		
+		RSSAnything.captures[0] = new Element('input', {'name': 'title', 'class' : 'RSSAnything'});
+		
+		var wrapper = new Element('div', {'class' : 'RSSAnything'});
+		wrapper.update("Title: ").appendChild(RSSAnything.captures[0]);
+		form.appendChild(wrapper);
+		
+		RSSAnything.captures[1] = new Element('input', {'name': 'content', 'class' : 'RSSAnything'});
+		
+		var wrapper = new Element('div', {'class' : 'RSSAnything'});
+		wrapper.update("Content: ").appendChild(RSSAnything.captures[1]);
+		form.appendChild(wrapper);
+		
+		RSSAnything.captures[2] = new Element('input', {'name': 'link', 'class' : 'RSSAnything'});
+
+		var wrapper = new Element('div', {'class' : 'RSSAnything'});
+		wrapper.update("Link: ").appendChild(RSSAnything.captures[2]);
+		form.appendChild(wrapper);
+		
+		//submit button
+		var wrapper = new Element('div', {'class' : 'RSSAnything', 'value' : 'save'});
+		wrapper.appendChild(new Element('input', {'type': 'submit', 'class' : 'RSSAnything'}));
+		form.appendChild(wrapper);
+		
 		mainDiv.appendChild(form);
 		parent.document.body.insertBefore(mainDiv, parent.document.body.firstChild);
 		
 	},
 
 	loadComplete: function() {
-		//RSSAnything.addWindow();
+		RSSAnything.addWindow();
 		
 		
 		
 		parent.document.onmouseover = parent.RSSAnything.highlightArea;
-		//parent.document.onmousedown = parent.RSSAnything.selectCurrentElement;
+		parent.document.onmousedown = parent.RSSAnything.selectCurrentElement;
 		//parent.document.onmouseup = parent.RSSAnything.getSelectedText;
 		// win = new Window({className: "mac_os_x", title: "Sample", width:200, height:150, destroyOnClose: true, recenterAuto:false});
 		// win.getContent().update("");

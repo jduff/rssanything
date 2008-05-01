@@ -7,3 +7,7 @@
 	background-color: #DDD;
 	border: 1px solid red;
 }
+
+.RSSAnything_main input {
+	width:500px;
+}
