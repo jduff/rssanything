@@ -10,8 +10,12 @@ class FeedTest < ActiveSupport::TestCase
     result = feeds(:mls).execute
     
     assert result
-    pp result
+    
+    assert_equal 10, result.length
+    
+    assert_equal "$175,000 Sheffield Glen/Ind Park 3705, Ottawa South, Ottawa, Eastern 8, Ontario", result[0][:title]
   
+    assert /http:\/\/www\.mls\.com\// =~ result[0][:link]
   end
   
   private
