@@ -47,8 +47,6 @@ var RSSAnything = {
 		
 		RSSAnything.highlightedNode.addClassName('RSSAnything_highlighted_element');
 		
-		console.log(pattern);
-		
 		$$(pattern).each(function(element) {
 			if(RSSAnything.highlightedNode != element) {
 				element.addClassName('RSSAnything_matched_element');
@@ -59,7 +57,7 @@ var RSSAnything = {
 	highlightedNode: null,
 	
 	buildPattern: function(element) {
-		var pattern = element.tagName;
+		var pattern = element.tagName.toLowerCase();
 		
 		$w(element.className).each(function(item) {
 			pattern = pattern + "." + item;
@@ -67,9 +65,9 @@ var RSSAnything = {
 		
 		var attributes = element.attributes;
 		for(var i =0; i < attributes.length; i++) {
-			if(attributes[i].name != 'class' && attributes[i].name != 'href'&& attributes[i].name != 'id')
+			if(attributes[i].name != 'class' && attributes[i].name != 'href'&& attributes[i].name != 'id' && attributes[i].name != 'src'&& attributes[i].name != 'alt')
 			{
-				pattern = pattern + '[' + attributes[i].name + '="' + attributes[i].value + '"]'
+				pattern = pattern + '[@' + attributes[i].name + "='" + attributes[i].value + "']"
 			}
 		}
 		return pattern;
@@ -92,33 +90,57 @@ var RSSAnything = {
 	current: 0,
 	captures: new Array(),
 	
+	testPatterns: function() {
+		for(var i = 0; i < RSSAnything.captures.length; i++)
+		{
+			$$(RSSAnything.captures[i].value).each(function(element) {
+				element.addClassName('RSSAnything_matched_element');
+			});
+		}
+	},
+	
 	addWindow: function() {
 		var mainDiv = new Element('div', { 'class': 'RSSAnything_main RSSAnything'}).update("RSSAnything");
 		var form = new Element('form', {'class' : 'RSSAnything', 'action' :  'http://' + HOST + '/feeds/new'});
 		
 		form.appendChild(new Element('input', {'name' : 'url', 'type' : 'hidden', 'value' : parent.document.location.href}))
 		
+		//Regex for the title
 		RSSAnything.captures[0] = new Element('input', {'name': 'title', 'class' : 'RSSAnything'});
 		
 		var wrapper = new Element('div', {'class' : 'RSSAnything'});
 		wrapper.update("Title: ").appendChild(RSSAnything.captures[0]);
 		form.appendChild(wrapper);
 		
+		//Regex for the content
 		RSSAnything.captures[1] = new Element('input', {'name': 'content', 'class' : 'RSSAnything'});
 		
 		var wrapper = new Element('div', {'class' : 'RSSAnything'});
 		wrapper.update("Content: ").appendChild(RSSAnything.captures[1]);
 		form.appendChild(wrapper);
 		
+		//Regex for the link
 		RSSAnything.captures[2] = new Element('input', {'name': 'link', 'class' : 'RSSAnything'});
 
 		var wrapper = new Element('div', {'class' : 'RSSAnything'});
 		wrapper.update("Link: ").appendChild(RSSAnything.captures[2]);
 		form.appendChild(wrapper);
 		
+		//Regex for the more link
+		RSSAnything.captures[3] = new Element('input', {'name': 'more', 'class' : 'RSSAnything'});
+		
+		var wrapper = new Element('div', {'class' : 'RSSAnything'});
+		wrapper.update("More Link: ").appendChild(RSSAnything.captures[3]);
+		form.appendChild(wrapper);
+		
 		//submit button
-		var wrapper = new Element('div', {'class' : 'RSSAnything', 'value' : 'save'});
+		var wrapper = new Element('div', {'class' : 'RSSAnything', 'text' : 'save'});
 		wrapper.appendChild(new Element('input', {'type': 'submit', 'class' : 'RSSAnything'}));
+		form.appendChild(wrapper);
+
+		//test button
+		var wrapper = new Element('div', {'class' : 'RSSAnything', 'text' : 'test'});
+		wrapper.appendChild(new Element('input', {'type': 'button', 'class' : 'RSSAnything', 'onclick' : 'RSSAnything.testPatterns()'}));
 		form.appendChild(wrapper);
 		
 		mainDiv.appendChild(form);
@@ -128,8 +150,6 @@ var RSSAnything = {
 
 	loadComplete: function() {
 		RSSAnything.addWindow();
-		
-		
 		
 		parent.document.onmouseover = parent.RSSAnything.highlightArea;
 		parent.document.onmousedown = parent.RSSAnything.selectCurrentElement;

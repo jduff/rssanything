@@ -14,11 +14,11 @@ ActiveRecord::Schema.define(:version => 2) do
   create_table "feeds", :force => true do |t|
     t.string   "title"
     t.string   "description"
-    t.string   "link"
     t.string   "link_regexp"
     t.string   "title_regexp"
     t.string   "content_regexp"
     t.string   "more_regexp"
+    t.text     "link"
     t.integer  "more"
     t.datetime "last_published"
     t.datetime "created_at"
@@ -27,10 +27,10 @@ ActiveRecord::Schema.define(:version => 2) do
 
   create_table "items", :force => true do |t|
     t.string   "title"
-    t.string   "link"
-    t.string   "guid"
+    t.text     "link"
     t.binary   "content"
     t.integer  "feed_id"
+    t.integer  "guid"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

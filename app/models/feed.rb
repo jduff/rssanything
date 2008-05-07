@@ -1,88 +1,58 @@
 require "net/http"
 require "uri"
-require "scrapi"
-Tidy.path = "/usr/lib/libtidy.dylib"
-
-# class ScrapePosts < Scraper::Base
-#   #cattr_reader :title_matcher
-#   
-#   @@title_matcher = ""
-#   
-#   def initialize(title, source, options=nil)
-#     @@title_matcher = title
-#     super source, options
-#   end
-#   
-#   
-#   array :titles
-#   
-#   process @@title_matcher, :titles => :text
-# 
-#   
-# end
+require "hpricot"
 
 class Feed < ActiveRecord::Base
   has_many :items
-  
-  #t.string :title, :description, :link, :link_regexp, :title_regexp, :content_regexp, :more_regexp
 
-  
   def execute
-    #grab the contents of the page to scrape
-    html = Net::HTTP.get(URI.parse(self.link))
+    items = parse_page(link)
+  end
+  
+  def parse_page(link)
+    doc = Hpricot(fetch_page(link))
     
-    #scrape the data we want from the page
-    result = page_scraper_for(self.title_regexp, self.link_regexp, self.content_regexp).scrape(html)
+    links = doc.search(link_regexp).collect do |link|
+      fix_relative_url(link.search("a[@href]").first.attributes["href"])
+    end
+    
+    titles = doc.search(title_regexp).collect do |title|
+      clean(title.to_s)
+    end
+    
+    contents = doc.search(content_regexp).collect do |content|
+      absolutize_links(content).to_s #make all links absolute
+    end
     
     items = []
-    result.link_array.each_index do |i|
-      link = fix_relative_url(result.link_array[i])
-      content = absolutize_links(result.content_array[i]).to_s #make all links absolute
-      title = clean(result.title_array[i]) #remove html, newlines and extra spaces
-      items << {:link => link, :title => title, :content => content}
+    links.each_index do |i|
+      items << Item.new({:link=>links[i], :title=>titles[i], :content=>contents[i], :guid=>links[i].hash})
     end
     
     items
-
   end
   
   private
-  # returns the scraper for the patterns passed in
-  def page_scraper_for(title_matcher, link_matcher, content_matcher)
-    Scraper.define do
-      selector :select_link, "a"
-      
-      array :title_array
-      process title_matcher, :title_array => :text
-      
-      array :link_array
-      process link_matcher, 
-        :link_array => Scraper.define {process "a[href]",:link =>"@href";result :link}
-      
-      process content_matcher do |element|
-        @content_array ||= []
-        @content_array << element
-      end
-      attr_accessor :content_array
-    end
+  def fetch_page(link)
+    uri = URI.parse(link)
+    path_with_query = uri.query.blank? ? uri.path : (uri.path + "?" + uri.query)
+    
+    response, html = Net::HTTP.new(uri.host, uri.port).get2(path_with_query, HEADERS)
+    return html
   end
   
   # parses through the html nodes, finds the links and fixes any that are relative
   def absolutize_links(node)
-    sibling = node
-    while(sibling = sibling.next_sibling)
-      absolutize_links(sibling) if sibling.tag? && sibling.name!="a"
-    end
-    
-    node.children.each do |node| 
-      node.attributes["href"] = fix_relative_url(node.attributes["href"]) if node.tag? && node.name=="a"
-      absolutize_links(node) if node.tag? && node.name!="a"
+    node.search("a") do |item|
+      item.attributes["href"] = fix_relative_url(item.attributes["href"])
     end
   end
   
   # pull out html tags, get rid of new lines, remove extra spaces
   def clean(string)
-    string.gsub(/<\/?[^>]*>/, "").gsub("\n", " ").squeeze(" ").strip
+    return "NO TITLE FOUND" if string == nil
+    string = string.gsub(/<\/?[^>]*>/, "").gsub("\n", " ").gsub("\t", " ").squeeze(" ").strip
+    return string.blank? ? "NO TITLE FOUND" : string
   end
   
   # some sites use relative urls, these wont work when clicking on them from the rss feed so
@@ -94,4 +64,10 @@ class Feed < ActiveRecord::Base
     end
     return url
   end
+  
+  HEADERS = {
+    'Accept' => '*/*',
+    'Accept-Language' => 'en-ca',
+    'User-Agent' => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322)'
+  }
 end

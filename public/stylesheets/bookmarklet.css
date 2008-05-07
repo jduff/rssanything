@@ -4,10 +4,35 @@
 }
 
 .RSSAnything_matched_element {
-	background-color: #DDD;
+	background-color: #abc;
 	border: 1px solid red;
+	margin: -1px;
 }
 
 .RSSAnything_main input {
 	width:500px;
+}
+
+.RSSAnything_matched_title {
+	background-color: #abc;
+	border: 1px solid red;
+	margin: -1px;
+}
+
+.RSSAnything_matched_content {
+	background-color: #abc;
+	border: 1px solid red;
+	margin: -1px;
+}
+
+.RSSAnything_matched_link {
+	background-color: #abc;
+	border: 1px solid red;
+	margin: -1px;
+}
+
+.RSSAnything_matched_more {
+	background-color: #abc;
+	border: 1px solid red;
+	margin: -1px;
 }

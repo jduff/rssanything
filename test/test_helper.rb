@@ -36,4 +36,8 @@ class Test::Unit::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+  
+  def get_content(content, type='html')
+    data = File.open(File.dirname(__FILE__) + "/test_content/#{content}.#{type}",'rb').read
+  end
 end
