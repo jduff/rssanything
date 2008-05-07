@@ -6,12 +6,27 @@ class Feed < ActiveRecord::Base
   has_many :items
 
   def execute
-    items = parse_page(link)
+    doc = Hpricot(fetch_page(link))
+    pages = []
+    
+    if !more_regexp.blank?
+      links = doc.search(more_regexp).collect do |link|
+        fix_relative_url(link.search("a[@href]").first.attributes["href"])
+      end
+      
+      0.upto([links.length, more].sort[0]) do |i|
+        pages << Hpricot(fetch_page(links[i]))
+      end
+    end
+    pages << doc
+    
+    items = pages.collect { |page| parse_page(page) }.flatten.uniq
   end
   
-  def parse_page(link)
-    doc = Hpricot(fetch_page(link))
-    
+  
+  
+  
+  def parse_page(doc)
     links = doc.search(link_regexp).collect do |link|
       fix_relative_url(link.search("a[@href]").first.attributes["href"])
     end

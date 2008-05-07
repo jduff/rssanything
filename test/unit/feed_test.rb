@@ -4,7 +4,7 @@ class FeedTest < ActiveSupport::TestCase
   # Replace this with your real tests.
   
   def test_extract_mls
-    Net::HTTP.any_instance.expects(:get2).returns([nil, get_content('mls')])
+    Net::HTTP.any_instance.expects(:get2).at_least(0).returns([nil, get_content('mls')])
     
     result = feeds(:mls).execute
     
@@ -23,8 +23,8 @@ class FeedTest < ActiveSupport::TestCase
     assert /http:\/\/www\.mls\.com\// =~ result[0].link
   end
   
-  def test_extract_mls
-    Net::HTTP.any_instance.expects(:get2).returns([nil, get_content('mls2')])
+  def test_extract_mls2
+    Net::HTTP.any_instance.expects(:get2).at_least(0).returns([nil, get_content('mls2')])
     
     result = feeds(:mls).execute
     
