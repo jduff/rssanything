@@ -56,4 +56,15 @@ Rails::Initializer.run do |config|
 
   # Make Active Record use UTC-base instead of local time
   # config.active_record.default_timezone = :utc
+  
+  config.load_paths += Dir["#{RAILS_ROOT}/vendor/gems/**"].map do |dir| 
+    File.directory?(lib = "#{dir}/lib") ? lib : dir
+  end
+  
+  config.after_initialize do
+    AsyncObserver::Queue.queue = Beanstalk::Pool.new(%w(localhost:11300))
+    # This value should change every time you make a release of your app.
+    AsyncObserver::Queue.app_version = 1
+
+  end
 end
