@@ -5,7 +5,7 @@ class FeedsControllerTest < ActionController::TestCase
 
 
   def test_show_feed
-    Net::HTTP.any_instance.expects(:get2).at_least(0).returns([nil, get_content('mls')])
+    Net::HTTP.any_instance.expects(:get2).returns([nil, get_content('mls')])
     
     assert_equal 2, feeds(:mls).items.length
     

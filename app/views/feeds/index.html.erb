@@ -1,7 +1,3764 @@
-
+<H1>
+<br />
+sdfdsadsaf " sdfds "
+</H1>
 <A href="<%=bookmarklet_link%>">RSS Anything</A>
+<script type='text/javascript'>
+var HOST = '<%=request.host_with_port%>';
+var lazy = document.createElement('SCRIPT');
+lazy.src = 'http://<%=request.host_with_port%>/javascripts/lazyload-min.js?' + Math.random();
+lazy.type = 'text/javascript';
+var head = document.getElementsByTagName('HEAD')[0];
+head.appendChild(lazy);void(0);
+var script = document.createElement('SCRIPT');
+script.src = 'http://<%=request.host_with_port%>/javascripts/bookmarklet.js?' + Math.random();
+script.type = 'text/javascript';
+var head = document.getElementsByTagName('HEAD')[0];
+head.appendChild(script);void(0);
+</script>
 
-<h1>Feeds</h1>
-<% @feeds.each do |feed| %>
-  <%=link_to feed.title, :action => :show, :id => feed.id%>
-<%end%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>mls.ca  - Property Results </title>
+<META http-equiv="Content-Type" content="text/html;charset=utf-8">
+<META http-equiv="imagetoolbar" content="no">
+<META name="title" content="MLS.CA">
+<META name="description" content="mls.ca: canadian real estate">
+<META name="keywords" content="SIA,Sia.ca,mls.ca,MLS,MLS,Service inter agence,Maison à vendre,Maison à vendre Canada,Maison à vendre Québec,Agent immobilier,Agent immobilier Canada,Agent immobilier Québec,Courtier immobilier,Courtier immobilier Québec,Courtier immobilier Canada,Vente de maison,Vente de maison Canada,Vente de maison Québec,Immobilier Canada,Immobilier Québec,Real Estate Canada">
+<link rel='stylesheet' media='screen' type='text/css' href='http://www.mls.ca/presentation/CSS/cobrand_1.css'><link rel='stylesheet' media='print' type='text/css' href='http://www.mls.ca/presentation/CSS/cobrand_1_printable.css'><link rel='stylesheet' media='screen' type='text/css' href='http://www.mls.ca//presentation/css/base.css'>
+<script language='javascript' type='text/javascript' src='http://www.mls.ca//presentation/javascript/common.js?ver=4'></script>
+</head>
+<body site="1">
+
+<script language='javascript' type='text/javascript'>var DMNETdomain = "";
+var DMNETpage = window.location;
+var DMNETversion = "86";
+var DMNETsendTo = "//stats.crea.ca/dm.gif?";
+var DMNETsession;
+
+function dmneterr(){return true;}
+
+window.onerror=dmneterr;
+var s = new Date();
+
+if (navigator.userAgent.indexOf('Mac') >= 0 && s.getTimezoneOffset() >= 720)
+s.setTime (s.getTime() - 1440*60*1000);
+
+var dmnetURL = location.protocol + DMNETsendTo+"v="+DMNETversion+"&vst=1";
+var dmnetCookieString = document.cookie.toString();
+
+if(dmnetCookieString.indexOf("_dmnid") == -1)
+{
+DMNETsession = parseInt( Math.random()*1000000 ) + "_" + s.getTime();
+var domStr = "";
+if(DMNETdomain != "")
+{
+domStr = "domain="+ DMNETdomain +";";
+}
+document.cookie = "_dmnid=" + DMNETsession + ";expires=Mon, 31-Dec-2008 00:00:00 GMT;"+domStr+"path=/;";
+}
+dmnetCookieString = document.cookie.toString();
+if(dmnetCookieString.indexOf('_dmnid') == -1)
+{
+DMNETsession = "";
+}
+else
+{
+if(dmnetCookieString.indexOf(';') == -1)
+dmnetCookieString = dmnetCookieString.replace(/_dm/g, ';_dm');
+
+var start = dmnetCookieString.indexOf("_dmnid=") + 7;
+var end = dmnetCookieString.indexOf(";",start);
+
+if (end == -1)
+end = dmnetCookieString.length;
+DMNETsession = unescape(dmnetCookieString.substring(start,end));
+}
+dmnetURL += "&id="+DMNETsession+"&url="+escape(DMNETpage) + "&ref="+escape(document.referrer)+"&lng=" + ((!document.all || navigator.userAgent.match('Opera')) ? navigator.language : navigator.userLanguage) + "&tz=" + (Math.round(new Date('dec 1, 2002').getTimezoneOffset()/60)*-1);
+if(screen)
+dmnetURL += "&scr=" + escape( screen.width + "x" + screen.height + " " + screen.colorDepth + "bpp" );
+
+dmnetURL += "&rnd=" + new Date().getTime();
+
+if(document.layers)
+{
+document.write("<la"+"yer name=\"DMStats\" visibility=hide><img src=\""+dmnetURL+"\" height=1 width=1></la"+"yer>");
+}
+else
+{
+document.write("<di"+"v id=\"DMStats\" STYLE=\"position:absolute;visibility:hidden;\"><img src=\""+dmnetURL+"\" height=1 width=1></di"+"v>");
+}
+</script>
+<form name="frmMain" method="post" action="PropertyResults.aspx?Mode=0&amp;Page=1&amp;vs=Residential&amp;ret=300&amp;sts=0-0&amp;beds=2-0&amp;baths=2-0&amp;aid=2959%2c2971%2c2996%2c3094%2c3130%2c3158&amp;MapURL=%3fAreaID%3d2862&amp;tte=1&amp;tt=1%2c2&amp;mp=175000-250000-0&amp;mrt=0-0-4&amp;trt=2&amp;of=1&amp;ps=25&amp;o=A" id="frmMain">
+
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE3MzUzNzUzMzVkZKm924jGYe8p7mSWtjbclx+Ctf/1" />
+
+<script type="text/javascript">
+<!--
+var theForm = document.forms['frmMain'];
+if (!theForm) {
+    theForm = document.frmMain;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+// -->
+</script>
+
+	
+	
+
+<div class="PropertyResultsTable">
+		<table id="MAIN" class="Main" border="0" >
+		<tr><td>
+			
+
+<span class="Header" id="HEADER" >
+<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td>
+ <table width="765" border="0" cellspacing="0" cellpadding="0" align="center" >
+
+					<tr>
+						<td rowspan="2" align="left" valign="bottom" class="HeaderLogo"><a href="./index.aspx"><img src="http://www.mls.ca//presentation/images/en-CA/logo/mls_home.gif" id="_ctl0_PreHeader__ctl0_imglogo2" border="0" style="position:relative;top:1px" alt="MLS.CA" /></a></td>
+						<td width="627" class="Headingtext" valign="bottom"><img src="http://www.mls.ca//presentation/images/en-CA/banner/topbar_text.gif" id="_ctl0_PreHeader__ctl0_imgBackground" /></td>
+					</tr>
+					<tr>
+						<td id="_ctl0_PreHeader__ctl0_Td1" class="HeadingMenu" background="./presentation/images/en-ca/header/menu_bar_home.gif">
+						<table width="100%" cellpadding="0" cellspacing="0" ><tr>
+						<td  align="center" width="20%"><a id="_ctl0_PreHeader__ctl0_Hyperlink2" class="HeadingMenuText" href="StaticPage.aspx?f=Legal">Legal</a></td>
+
+						<td width="1" style="color:white">|</td>
+						<td  align="center" width="25%"><a id="_ctl0_PreHeader__ctl0_Hyperlink3" class="HeadingMenuText" href="StaticPage.aspx?f=Privacy">Privacy Policy</a></td>
+						<td width="1" style="color:white">|</td>
+						<td  align="center" width="20%"><a id="_ctl0_PreHeader__ctl0_Hyperlink4" class="HeadingMenuText" href="StaticPage.aspx?f=ContactUs">Contact Us</a></td>
+						<td width="1" style="color:white">|</td>
+						<td  align="center" width="15%"><a id="_ctl0_PreHeader__ctl0_Hyperlink5" class="HeadingMenuText" href="StaticPage.aspx?f=Help">Help</a></td>
+
+						<td width="1" style="color:white">|</td>
+						<td align="center" width="20%"><a id="_ctl0_PreHeader__ctl0_lnkLanguageToggle" class="HeadingMenuText" href="javascript:__doPostBack('_ctl0$PreHeader$_ctl0$lnkLanguageToggle','')">Français</a></td>
+						</tr></table>
+						
+						       
+						 </td>
+
+					</tr>
+				</table>
+</td></tr>
+<tr><td>
+
+</td></tr></table>
+</span>
+
+
+
+		</td></tr>
+			<tr>
+				<td id="CONTENT" class="Content">
+					
+<div align="left" class="BreadCrumb"><a href="/index.aspx">Home</a> &gt; <a href="PropertySearch.aspx?Mode=0&Page=1&vs=Residential&ret=300&sts=0-0&beds=2-0&baths=2-0&aid=2959%2c2971%2c2996%2c3094%2c3130%2c3158&MapURL=%3fAreaID%3d2862&tte=1&tt=1%2c2&mp=175000-250000-0&mrt=0-0-4&trt=2&of=1&ps=25&o=A&SearchStatus=0">Property Search</a> &gt; Property Search Results</div>
+
+					<div class="PropertyResultsTable2">
+					<table border="0" width="100%" cellpadding="5">
+						<tr>
+							<td >
+								
+<table width="100%">
+<tr><td>
+
+
+<div class="Pager">
+<div class="Label"><span id="_ctl0_PropertyResults_TopPaging_lblHeader" class="PageHeader">Page 1 of 5 - 118 matches found</span></div>
+
+<div class="Label"><span id="_ctl0_PropertyResults_TopPaging_lblPages"> <b>1</b>  <a href="/PropertyResults.aspx?Page=2&Mode=0&vs=Residential&ret=300&sts=0-0&beds=2-0&baths=2-0&aid=2959%2c2971%2c2996%2c3094%2c3130%2c3158&MapURL=%3fAreaID%3d2862&tte=1&tt=1%2c2&mp=175000-250000-0&mrt=0-0-4&trt=2&of=1&ps=25&o=A">2</a>  <a href="/PropertyResults.aspx?Page=3&Mode=0&vs=Residential&ret=300&sts=0-0&beds=2-0&baths=2-0&aid=2959%2c2971%2c2996%2c3094%2c3130%2c3158&MapURL=%3fAreaID%3d2862&tte=1&tt=1%2c2&mp=175000-250000-0&mrt=0-0-4&trt=2&of=1&ps=25&o=A">3</a>  <a href="/PropertyResults.aspx?Page=4&Mode=0&vs=Residential&ret=300&sts=0-0&beds=2-0&baths=2-0&aid=2959%2c2971%2c2996%2c3094%2c3130%2c3158&MapURL=%3fAreaID%3d2862&tte=1&tt=1%2c2&mp=175000-250000-0&mrt=0-0-4&trt=2&of=1&ps=25&o=A">4</a>  <a href="/PropertyResults.aspx?Page=5&Mode=0&vs=Residential&ret=300&sts=0-0&beds=2-0&baths=2-0&aid=2959%2c2971%2c2996%2c3094%2c3130%2c3158&MapURL=%3fAreaID%3d2862&tte=1&tt=1%2c2&mp=175000-250000-0&mrt=0-0-4&trt=2&of=1&ps=25&o=A">5</a> &nbsp;&nbsp; <a href="/PropertyResults.aspx?Page=2&Mode=0&vs=Residential&ret=300&sts=0-0&beds=2-0&baths=2-0&aid=2959%2c2971%2c2996%2c3094%2c3130%2c3158&MapURL=%3fAreaID%3d2862&tte=1&tt=1%2c2&mp=175000-250000-0&mrt=0-0-4&trt=2&of=1&ps=25&o=A">Next</a> </span></div>
+</div>
+<hr size="1" width="98%">
+
+</td></tr>
+
+<tr><td>
+
+
+<table class="MainHeadingTable" width="99%" border="0" align="center">
+	<tr>
+		<td class="MainHeadingSecondary" width="135">
+			$179,900
+			
+
+		</td>
+		<td class="MainHeadingSecondary" colspan="2">
+		 Ashton 8206, K-Goulbourn, Ottawa, Eastern 8, Ontario</td>
+
+		</td>
+	</tr>
+</table><br>
+<table width="99%"  align="center">
+	<tr>
+		<td class="NonPadded" colspan="2">
+			<table width="100%" border="0">
+				<tr>
+					<td valign="top" width="150">
+
+						<a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6756082">
+						<img class="PhotoResults" alt='687828                   ' src='http://images.mls.ca/listings/reb76/lowres/8/687828_1.jpg'></A>
+					</td>
+					<td  valign="top" width="300">
+						<span class="Label" id="ReferenceNumber"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6756082">MLS&reg;: 687828                   </A> </span><span class='PropResultsRealEstateType'>( Single Family ) </span>
+						<div class="Text">YOU WILL NOT BELIEVE THIS FABULOUS "CHALET PARK MODEL",UNDOUBTDLY THE MOST UNIQUELY  DESIGNED HOME OF ITS KIND! SPARKLING & PRISTINELY UPGRADED, 2 LEVEL OPEN CONCEPT,CHARMING GRILLED WINDOWS/GARDEN DRS,HRDWD & CERAMIC THRU.GORGEOUS DESIGNER WINDOW CO</div>				
+						
+						<div style="padding-top:3px"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6756082">For More Information</a></div>
+
+					     </div>
+					</td>
+					<td class="NonPadded" width="290" height="140" valign="top" rowspan="2">
+						<table width="100%" border="0" cellpadding="0" align="right">
+							
+									<tr>
+										<td align="center" width="80" valign="top">
+										
+											<img src="http://images.mls.ca/individual/lowres/1067678.jpg" width="55" height="72"alt="BARBARA COUCH">
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+
+										    BARBARA  COUCH
+										       
+										       
+                                         </div>
+											
+											Salesperson
+											
+
+							                
+									        
+									        
+                                                   <div>Telephone: 613-253-0518</div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="javascript:EmailRealtor(17844568,'ifC5Uo1omhF4+2nWcbLE3g','687828', 3, '6756082');">Email REALTOR®</a><br></div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.barbaracouch.com&t=ind" target="_blank">REALTOR® Website</a><br></div>
+                                                
+										</td>
+									</tr>
+
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+									     <td valign="top">
+									        <img src="http://images.mls.ca/organization/en-CA/lowres/default/remaxoa.gif" width="75" height="36"alt="RE/MAX METRO-CITY REALTY LIMITED, BROKERAGE"></td>
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>RE/MAX METRO-CITY REALTY LIMITED, BROKERAGE</div>
+											
+											<div>31 NORTHSIDE ROAD<br>OTTAWA, Ontario &nbsp; K2H 8S1<br></div>
+
+										    
+										      
+										    
+                                                      <div>Telephone: 613-596-1651</div>
+                                                
+                                                      <div>Fax: 613-596-1989</div>
+                                                
+                                	        
+                                            
+                                	        
+                                            
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+								
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td valign="bottom" colspan="2" class="Features">
+
+<span class="FeatureIcons">
+
+
+
+
+<a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.barbaracouch.com&t=multimedia" id="_ctl0_PropertyResults_rptListings__ctl0__ctl0_eFeatureIcons_lnkMultimedia" style="CURSOR: pointer" target="_blank"><img src="http://www.mls.ca//presentation/images/en-CA/icons/virtualTour.gif" id="_ctl0_PropertyResults_rptListings__ctl0__ctl0_eFeatureIcons_ImgMultimedia" alt="View Multimedia" /></a>
+
+
+
+</span>
+
+</td>
+
+				</tr>
+			</table>
+		</td>
+	</tr>
+<tr><td>&nbsp;</td></tr>
+
+
+<table class="MainHeadingTable" width="99%" border="0" align="center">
+	<tr>
+		<td class="MainHeadingSecondary" width="135">
+			$185,000
+			
+
+		</td>
+
+		<td class="MainHeadingSecondary" colspan="2">
+		 Ashton 8206, K-Goulbourn, Ottawa, Eastern 8, Ontario</td>
+
+		</td>
+	</tr>
+</table><br>
+<table width="99%"  align="center">
+	<tr>
+		<td class="NonPadded" colspan="2">
+			<table width="100%" border="0">
+
+				<tr>
+					<td valign="top" width="150">
+						<a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6564355">
+						<img class="PhotoResults" alt='683557                   ' src='http://images.mls.ca/listings/reb76/lowres/7/683557_1.jpg'></A>
+					</td>
+					<td  valign="top" width="300">
+						<span class="Label" id="ReferenceNumber"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6564355">MLS&reg;: 683557                   </A> </span><span class='PropResultsRealEstateType'>( Single Family ) </span>
+
+						<div class="Text">Delightful retirement home with all the extras. Solarium, foyer, living room with gas fireplc,sliding glass French Doors from foyer and leading tospacious kitchen with island eatng area, 2 bedrooms with ensuite and a computer area. Ready for you to m</div>				
+						
+						<div style="padding-top:3px"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6564355">For More Information</a></div>
+					     <div class='PropResultsOpenHouse'>Open House&nbsp;&nbsp;&nbsp;&nbsp;May 04/08&nbsp;&nbsp;-&nbsp;&nbsp;2:00 PM To 4:00 PM<DIV></div>
+					</td>
+					<td class="NonPadded" width="290" height="140" valign="top" rowspan="2">
+						<table width="100%" border="0" cellpadding="0" align="right">
+
+							
+									<tr>
+										<td align="center" width="80" valign="top">
+										
+											
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+										    JOHN  VUJANICH
+										       
+										       
+                                         </div>
+											
+											Salesperson
+											
+
+							                
+									        
+									        
+                                                   <div>Telephone: 613-816-3214</div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="javascript:EmailRealtor(18736476,'VpKtLRRxVYwrf6XbRfuTnA','683557', 3, '6564355');">Email REALTOR®</a><br></div>
+
+                                                
+                                	        
+                                            
+										</td>
+									</tr>
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+									     <td valign="top">
+									        <img src="http://images.mls.ca/organization/en-CA/lowres/default/royallepage.gif" width="75" height="36"alt="ROYAL LEPAGE TEAM REALTY, BROKERAGE"></td>
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>ROYAL LEPAGE TEAM REALTY, BROKERAGE</div>
+											
+											<div>6081 HAZELDEAN ROAD, 12B<br>STITTSVILLE, Ontario &nbsp; K2S 1B9<br></div>
+
+										    
+										      
+										    
+                                                      <div>Telephone: 613-831-9287</div>
+                                                
+                                                      <div>Fax: 613-831-9290</div>
+                                                
+                                	        
+                                            
+                                	        
+                                            
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+								
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td valign="bottom" colspan="2" class="Features">
+
+<span class="FeatureIcons">
+
+
+
+
+
+
+
+
+</span>
+
+</td>
+
+				</tr>
+			</table>
+		</td>
+	</tr>
+<tr><td>&nbsp;</td></tr>
+
+
+<table class="MainHeadingTable" width="99%" border="0" align="center">
+	<tr>
+		<td class="MainHeadingSecondary" width="135">
+			$194,500
+			
+
+		</td>
+
+		<td class="MainHeadingSecondary" colspan="2">
+		 Westcliffe Estates 7802, M-Kanata, Nepean, Ottawa, Eastern 8, Ontario</td>
+
+		</td>
+	</tr>
+</table><br>
+<table width="99%"  align="center">
+	<tr>
+		<td class="NonPadded" colspan="2">
+			<table width="100%" border="0">
+
+				<tr>
+					<td valign="top" width="150">
+						<a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6816790">
+						<img class="PhotoResults" alt='689387                   ' src='http://images.mls.ca/listings/reb76/lowres/7/689387_1.jpg'></A>
+					</td>
+					<td  valign="top" width="300">
+						<span class="Label" id="ReferenceNumber"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6816790">MLS&reg;: 689387                   </A> </span><span class='PropResultsRealEstateType'>( Single Family ) </span>
+
+						<div class="Text">ENJOY this beautifully kept row home w/ NO condo fees, Professionally finished basmt,over $40k in upgrades throughout,Relax by the wood burning fireplace or on the private rear deck in the Japanese garden-style backyard. new windows('02),new patio do</div>				
+						
+						<div style="padding-top:3px"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6816790">For More Information</a></div>
+					     </div>
+					</td>
+					<td class="NonPadded" width="290" height="140" valign="top" rowspan="2">
+						<table width="100%" border="0" cellpadding="0" align="right">
+							
+									<tr>
+										<td align="center" width="80" valign="top">
+
+										
+											
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+										    GIUSEPPE  RANIERI
+										       
+										       
+                                         </div>
+											
+											Salesperson
+											
+
+							                
+									        
+									        
+                                                   
+                                                
+                                                   <div>Telephone: 613-724-1710</div>
+                                                
+                                	        
+                                            
+                                                      
+                                                
+                                                      <div><a href="javascript:EmailRealtor(14281307,'Et4a0A8J4/wUuobpb9kruw','689387', 3, '6816790');">Email REALTOR®</a><br></div>
+                                                
+                                	        
+                                            
+                                                      
+                                                
+                                                      <div><a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.bestvalu.biz&t=ind" target="_blank">REALTOR® Website</a><br></div>
+
+                                                
+										</td>
+									</tr>
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+									     <td valign="top">
+									        </td>
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>BEST VALUE REAL ESTATE LTD., BROKERAGE</div>
+											
+											<div>219 TWYFORD STREET<br>OTTAWA, Ontario &nbsp; K1V 0V9<br></div>
+
+										    
+										      
+										    
+                                                      
+                                                
+                                                      
+                                                
+                                                      <div>Telephone: 613-262-5351</div>
+                                                
+                                                      <div>Fax: 613-248-1966</div>
+                                                
+                                	        
+                                            
+                                	        
+                                            
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+								
+									<tr>
+										<td align="center" width="80" valign="top">
+										
+											
+																		
+										<td valign="top">
+
+										<div class='LabelSecondary'>
+										    JOE  WILLIAM PH D
+										       
+										       
+                                         </div>
+											
+											Broker of Record
+											
+
+							                
+									        
+									        
+                                                   <div>Telephone: 613-262-5351</div>
+                                                
+                                                   
+                                                
+                                	        
+                                            
+                                                      <div><a href="javascript:EmailRealtor(19875102,'nyfnaiCVQV6zgPlRtIUXrQ','689387', 3, '6816790');">Email REALTOR®</a><br></div>
+                                                
+                                                      
+                                                
+                                	        
+                                            
+                                                      <div><a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.bestvalue.biz&t=ind" target="_blank">REALTOR® Website</a><br></div>
+                                                
+                                                      
+                                                
+										</td>
+
+									</tr>
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+									     <td valign="top">
+									        </td>
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>BEST VALUE REAL ESTATE LTD., BROKERAGE</div>
+											
+											<div>219 TWYFORD STREET<br>OTTAWA, Ontario &nbsp; K1V 0V9<br></div>
+
+										    
+										      
+										    
+                                                      <div>Telephone: 613-262-5351</div>
+                                                
+                                                      <div>Fax: 613-248-1966</div>
+                                                
+                                                      
+                                                
+                                                      
+                                                
+                                	        
+                                            
+                                	        
+                                            
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+								
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td valign="bottom" colspan="2" class="Features">
+
+<span class="FeatureIcons">
+
+
+
+
+
+
+
+
+</span>
+
+</td>
+
+				</tr>
+			</table>
+		</td>
+	</tr>
+<tr><td>&nbsp;</td></tr>
+
+
+<table class="MainHeadingTable" width="99%" border="0" align="center">
+	<tr>
+		<td class="MainHeadingSecondary" width="135">
+			$196,500
+			
+
+		</td>
+
+		<td class="MainHeadingSecondary" colspan="2">
+		 Westcliffe Estates 7802, M-Kanata, Nepean, Ottawa, Eastern 8, Ontario</td>
+
+		</td>
+	</tr>
+</table><br>
+<table width="99%"  align="center">
+	<tr>
+		<td class="NonPadded" colspan="2">
+			<table width="100%" border="0">
+
+				<tr>
+					<td valign="top" width="150">
+						<a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6598681">
+						<img class="PhotoResults" alt='684302                   ' src='http://images.mls.ca/listings/reb76/lowres/2/684302_1.jpg'></A>
+					</td>
+					<td  valign="top" width="300">
+						<span class="Label" id="ReferenceNumber"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6598681">MLS&reg;: 684302                   </A> </span><span class='PropResultsRealEstateType'>( Single Family ) </span>
+
+						<div class="Text">Fabulous End unit!!! New 2008 gas Furnace, new 2008 Carpeting in Livrm & Dinrm, New 2007 carpeting in Master bedrm, new '07 back patio door, parquet hardwd thruout main & 2nd lvl (*note, the new carpeting does have parquet underneath)  Very good size</div>				
+						
+						<div style="padding-top:3px"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6598681">For More Information</a></div>
+					     </div>
+					</td>
+					<td class="NonPadded" width="290" height="140" valign="top" rowspan="2">
+						<table width="100%" border="0" cellpadding="0" align="right">
+							
+									<tr>
+
+										<td align="center" width="80" valign="top">
+										
+											<img src="http://images.mls.ca/individual/lowres/1066900.jpg" width="55" height="72"alt="DANINE MAY">
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+										    DANINE  MAY
+										       
+										       
+                                         </div>
+											
+											Salesperson
+											
+
+							                
+									        
+									        
+                                                   <div>Telephone: 613-850-9010</div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="javascript:EmailRealtor(6730971,'ZE8K943wjoAUq+hOJTC0Vw','684302', 3, '6598681');">Email REALTOR®</a><br></div>
+
+                                                
+                                	        
+                                            
+                                                      <div><a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.Danine.com&t=ind" target="_blank">REALTOR® Website</a><br></div>
+                                                
+										</td>
+									</tr>
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+									     <td valign="top">
+									        <img src="http://images.mls.ca/organization/en-CA/lowres/default/royallepage.gif" width="75" height="36"alt="ROYAL LEPAGE GALE REAL ESTATE, BROKERAGE"></td>
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>ROYAL LEPAGE GALE REAL ESTATE, BROKERAGE</div>
+
+											
+											<div>5510 MANOTICK MAIN ST. BOX 803<br>MANOTICK, Ontario &nbsp; K4M 1A7<br></div>
+										    
+										      
+										    
+                                                      <div>Telephone: 613-692-2555</div>
+                                                
+                                                      <div>Toll Free: 800-387-2526</div>
+                                                
+                                                      <div>Fax: 613-692-0952</div>
+                                                
+                                	        
+                                            
+                                	        
+                                            
+                                      </td>
+
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+								
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td valign="bottom" colspan="2" class="Features">
+
+<span class="FeatureIcons">
+
+
+
+
+
+
+
+</span>
+
+</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+<tr><td>&nbsp;</td></tr>
+
+
+<table class="MainHeadingTable" width="99%" border="0" align="center">
+	<tr>
+		<td class="MainHeadingSecondary" width="135">
+			$199,900
+			
+
+		</td>
+		<td class="MainHeadingSecondary" colspan="2">
+		 Bridlewood 9004, M-Kanata, Nepean, Ottawa, Eastern 8, Ontario</td>
+
+		</td>
+	</tr>
+</table><br>
+<table width="99%"  align="center">
+	<tr>
+		<td class="NonPadded" colspan="2">
+			<table width="100%" border="0">
+				<tr>
+					<td valign="top" width="150">
+						<a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6688237">
+
+						<img class="PhotoResults" alt='686164                   ' src='http://images.mls.ca/listings/reb76/lowres/4/686164_1.jpg'></A>
+					</td>
+					<td  valign="top" width="300">
+						<span class="Label" id="ReferenceNumber"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6688237">MLS&reg;: 686164                   </A> </span><span class='PropResultsRealEstateType'>( Single Family ) </span>
+						<div class="Text">OPEN HOUSE, 4/5/08, 2 PM TO 4 PM! START ME UP! 2 bedrm town in execellent condition. Ceramic entry, combined livrm/dinrm, eat-in kitchen. Patio door to large rear yard, 2 generously sized bedrooms. and 4 piece family bath, lower level family room. w/</div>				
+						
+						<div style="padding-top:3px"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6688237">For More Information</a></div>
+
+					     <div class='PropResultsOpenHouse'>Open House&nbsp;&nbsp;&nbsp;&nbsp;May 04/08&nbsp;&nbsp;-&nbsp;&nbsp;2:00 PM To 4:00 PM<DIV></div>
+					</td>
+					<td class="NonPadded" width="290" height="140" valign="top" rowspan="2">
+						<table width="100%" border="0" cellpadding="0" align="right">
+							
+									<tr>
+										<td align="center" width="80" valign="top">
+										
+											<img src="http://images.mls.ca/individual/lowres/1142433.jpg" width="55" height="72"alt="RICHARD RUTKOWSKI">
+
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+										    RICHARD  RUTKOWSKI
+										       
+										       
+                                         </div>
+											
+											Broker
+											
+
+							                
+									        
+									        
+                                                   <div>Telephone: 613-552-2112</div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="javascript:EmailRealtor(17844606,'p+d85T9x9uTeHVzaHT4tLg','686164', 3, '6688237');">Email REALTOR®</a><br></div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.listsellandbuy.com&t=ind" target="_blank">REALTOR® Website</a><br></div>
+
+                                                
+										</td>
+									</tr>
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+									     <td valign="top">
+									        <img src="http://images.mls.ca/organization/en-CA/lowres/default/royallepage.gif" width="75" height="36"alt="ROYAL LEPAGE GALE REAL ESTATE, BROKERAGE"></td>
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>ROYAL LEPAGE GALE REAL ESTATE, BROKERAGE</div>
+											
+											<div>591 MARCH ROAD<br>KANATA, Ontario &nbsp; K2K 2M5<br></div>
+
+										    
+										      
+										    
+                                                      <div>Telephone: 613-270-8200</div>
+                                                
+                                                      <div>Toll Free: 800-499-8445</div>
+                                                
+                                                      <div>Fax: 613-270-0463</div>
+                                                
+                                	        
+                                            
+                                	        
+                                            
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+								
+						</table>
+
+					</td>
+				</tr>
+				<tr>
+					<td valign="bottom" colspan="2" class="Features">
+
+<span class="FeatureIcons">
+
+
+<a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.listsellandbuy.com&t=multimedia" id="_ctl0_PropertyResults_rptListings__ctl4__ctl0_eFeatureIcons_lnkAddPhoto" style="CURSOR: pointer" target="_blank"><img src="http://www.mls.ca//presentation/images/en-CA/icons/additionalPhotos.gif" id="_ctl0_PropertyResults_rptListings__ctl4__ctl0_eFeatureIcons_ImgAddPhoto" alt="Additional Photos" /></a>
+
+
+
+
+</span>
+
+</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+<tr><td>&nbsp;</td></tr>
+
+
+<table class="MainHeadingTable" width="99%" border="0" align="center">
+	<tr>
+
+		<td class="MainHeadingSecondary" width="135">
+			$209,900
+			
+
+		</td>
+		<td class="MainHeadingSecondary" colspan="2">
+		 Redwood Park 6301, Ottawa Far West, Ottawa, Eastern 8, Ontario</td>
+
+		</td>
+	</tr>
+</table><br>
+<table width="99%"  align="center">
+
+	<tr>
+		<td class="NonPadded" colspan="2">
+			<table width="100%" border="0">
+				<tr>
+					<td valign="top" width="150">
+						<a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6778814">
+						<img class="PhotoResults" alt='688314                   ' src='http://images.mls.ca/listings/reb76/lowres/4/688314_1.jpg'></A>
+					</td>
+					<td  valign="top" width="300">
+
+						<span class="Label" id="ReferenceNumber"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6778814">MLS&reg;: 688314                   </A> </span><span class='PropResultsRealEstateType'>( Single Family ) </span>
+						<div class="Text">2742 CONSUL AVE - OPEN HOUSE 12 TO 2PM APRIL 20TH - READY TO MOVE INTO, BRIGHT AND CHEERY ROOMS ON BOTH FLOORS. ALL 3 BEDROOMS ARE A NICE SIZE WITH PARKAY FLOORING. RECREATION ROOM DOWNSTAIRS PROVIDES EXTRA LIVING SPACE. DEEDED PARKING WITH ELECTRICA</div>				
+						
+						<div style="padding-top:3px"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6778814">For More Information</a></div>
+					     </div>
+					</td>
+					<td class="NonPadded" width="290" height="140" valign="top" rowspan="2">
+
+						<table width="100%" border="0" cellpadding="0" align="right">
+							
+									<tr>
+										<td align="center" width="80" valign="top">
+										
+											
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+										    LINDA  NEWSON
+										       
+										       
+                                         </div>
+											
+											Salesperson
+											
+
+							                
+									        
+									        
+                                                   
+                                                
+                                                   <div>Telephone: 613-866-9013</div>
+
+                                                
+                                	        
+                                            
+                                                      
+                                                
+                                                      <div><a href="javascript:EmailRealtor(6731387,'6vak02R9gQzC1fwPENRSpg','688314', 3, '6778814');">Email REALTOR®</a><br></div>
+                                                
+                                	        
+                                            
+                                                      
+                                                
+										</td>
+									</tr>
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+									     <td valign="top">
+									        </td>
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>PRUDENTIAL TOWN CENTRE REALTY INC., BROKERAGE</div>
+
+											
+											<div>1131 HIGHWAY #43<br>MERRICKVILLE, Ontario &nbsp; K0G 1N0<br></div>
+										    
+										      
+										    
+                                                      
+                                                
+                                                      
+                                                
+                                                      <div>Telephone: 613-269-2222</div>
+                                                
+                                                      <div>Fax: 613-269-2665</div>
+                                                
+                                	        
+                                            
+                                	        
+                                            
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+
+								
+									<tr>
+										<td align="center" width="80" valign="top">
+										
+											<img src="http://images.mls.ca/individual/lowres/1067482.jpg" width="55" height="72"alt="GERALD SEGUIN">
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+										    GERALD  SEGUIN
+										       
+										       
+                                         </div>
+											
+											Salesperson
+											
+
+							                
+									        
+									        
+                                                   <div>Telephone: 613-852-4313</div>
+
+                                                
+                                                   
+                                                
+                                	        
+                                            
+                                                      <div><a href="javascript:EmailRealtor(19662238,'C+2sLxl3Q7W6xUCmBcU+Bw','688314', 3, '6778814');">Email REALTOR®</a><br></div>
+                                                
+                                                      
+                                                
+                                	        
+                                            
+                                                      <div><a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.merrickville.ca&t=ind" target="_blank">REALTOR® Website</a><br></div>
+                                                
+										</td>
+									</tr>
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+									     <td valign="top">
+									        </td>
+
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>PRUDENTIAL TOWN CENTRE REALTY INC., BROKERAGE</div>
+											
+											<div>1131 HIGHWAY #43<br>MERRICKVILLE, Ontario &nbsp; K0G 1N0<br></div>
+										    
+										      
+										    
+                                                      <div>Telephone: 613-269-2222</div>
+                                                
+                                                      <div>Fax: 613-269-2665</div>
+
+                                                
+                                                      
+                                                
+                                                      
+                                                
+                                	        
+                                            
+                                	        
+                                            
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+								
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td valign="bottom" colspan="2" class="Features">
+
+<span class="FeatureIcons">
+
+
+
+
+<a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2f0&t=multimedia" id="_ctl0_PropertyResults_rptListings__ctl5__ctl0_eFeatureIcons_lnkMultimedia" style="CURSOR: pointer" target="_blank"><img src="http://www.mls.ca//presentation/images/en-CA/icons/virtualTour.gif" id="_ctl0_PropertyResults_rptListings__ctl5__ctl0_eFeatureIcons_ImgMultimedia" alt="View Multimedia" /></a>
+
+
+
+</span>
+
+</td>
+				</tr>
+			</table>
+		</td>
+
+	</tr>
+<tr><td>&nbsp;</td></tr>
+
+
+<table class="MainHeadingTable" width="99%" border="0" align="center">
+	<tr>
+		<td class="MainHeadingSecondary" width="135">
+			$209,900
+			
+
+		</td>
+		<td class="MainHeadingSecondary" colspan="2">
+		 Glencairn / Hazeldean 9003, M-Kanata, Nepean, Ottawa, Eastern 8, Ontario</td>
+
+		</td>
+	</tr>
+</table><br>
+<table width="99%"  align="center">
+	<tr>
+		<td class="NonPadded" colspan="2">
+			<table width="100%" border="0">
+				<tr>
+					<td valign="top" width="150">
+
+						<a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6943969">
+						<img class="PhotoResults" alt='692781                   ' src='http://images.mls.ca/listings/reb76/lowres/1/692781_1.jpg'></A>
+					</td>
+					<td  valign="top" width="300">
+						<span class="Label" id="ReferenceNumber"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6943969">MLS&reg;: 692781                   </A> </span><span class='PropResultsRealEstateType'>( Single Family ) </span>
+						<div class="Text">Comfy & updated semi-detatched hi-ranch. Pleasant newer oak kitchen w/eating-bar, master + 2nd bedrm, living & dining rms & full bath on main flr. Lower level has family rm w/ gas fireplace, den & bedrm plus 3-piece bathrm. Double driveway provides l</div>				
+						
+						<div style="padding-top:3px"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6943969">For More Information</a></div>
+
+					     </div>
+					</td>
+					<td class="NonPadded" width="290" height="140" valign="top" rowspan="2">
+						<table width="100%" border="0" cellpadding="0" align="right">
+							
+									<tr>
+										<td align="center" width="80" valign="top">
+										
+											<img src="http://images.mls.ca/individual/lowres/1068005.jpg" width="55" height="72"alt="BERNICE BARTLETT">
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+
+										    BERNICE  BARTLETT
+										       
+										       
+                                         </div>
+											
+											Salesperson
+											
+
+							                
+									        
+									        
+                                                   <div>Telephone: 613-592-6400</div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="javascript:EmailRealtor(6945576,'/xJXKFzUCInOcqyzkJiyhw','692781', 3, '6943969');">Email REALTOR®</a><br></div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.bernicebartlett.com&t=ind" target="_blank">REALTOR® Website</a><br></div>
+                                                
+										</td>
+									</tr>
+
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+									     <td valign="top">
+									        <img src="http://images.mls.ca/organization/en-CA/lowres/default/royallepage.gif" width="75" height="36"alt="ROYAL LEPAGE TEAM REALTY, BROKERAGE"></td>
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>ROYAL LEPAGE TEAM REALTY, BROKERAGE</div>
+											
+											<div>484 HAZELDEAN ROAD<br>KANATA, Ontario &nbsp; K2L 1V4<br></div>
+
+										    
+										      
+										    
+                                                      <div>Telephone: 613-592-6400</div>
+                                                
+                                                      <div>Fax: 613-592-4945</div>
+                                                
+                                	        
+                                            
+                                	        
+                                            
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+								
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td valign="bottom" colspan="2" class="Features">
+
+<span class="FeatureIcons">
+
+
+
+<a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.bernicebartlett.com%2f232castlefrank.html&t=multimedia" id="_ctl0_PropertyResults_rptListings__ctl6__ctl0_eFeatureIcons_lnkBrochure" style="CURSOR: pointer" target="_blank"><img src="http://www.mls.ca//presentation/images/en-CA/icons/brochure.gif" id="_ctl0_PropertyResults_rptListings__ctl6__ctl0_eFeatureIcons_ImgBrochure" alt="Brochure" /></a>
+
+
+
+
+</span>
+
+</td>
+
+				</tr>
+			</table>
+		</td>
+	</tr>
+<tr><td>&nbsp;</td></tr>
+
+
+<table class="MainHeadingTable" width="99%" border="0" align="center">
+	<tr>
+		<td class="MainHeadingSecondary" width="135">
+			$209,900
+			
+
+		</td>
+
+		<td class="MainHeadingSecondary" colspan="2">
+		 Barrhaven / Longfields / Davidson Heights 7706, M-Kanata, Nepean, Ottawa, Eastern 8, Ontario</td>
+
+		</td>
+	</tr>
+</table><br>
+<table width="99%"  align="center">
+	<tr>
+		<td class="NonPadded" colspan="2">
+			<table width="100%" border="0">
+
+				<tr>
+					<td valign="top" width="150">
+						<a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6955311">
+						<img class="PhotoResults" alt='693194                   ' src='http://images.mls.ca/listings/reb76/lowres/4/693194_1.jpg'></A>
+					</td>
+					<td  valign="top" width="300">
+						<span class="Label" id="ReferenceNumber"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6955311">MLS&reg;: 693194                   </A> </span><span class='PropResultsRealEstateType'>( Single Family ) </span>
+
+						<div class="Text">What a gem! Great three bedroom freehold in nice location of Longfields.Five appliances,central air,fenced yard,alarm system.Why rent when you can own!Great potential in almost finished basement.All it needs is you.Have a look.You'll be glad you did!</div>				
+						
+						<div style="padding-top:3px"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6955311">For More Information</a></div>
+					     <div class='PropResultsOpenHouse'>Open House&nbsp;&nbsp;&nbsp;&nbsp;May 04/08&nbsp;&nbsp;-&nbsp;&nbsp;2:00 PM To 4:00 PM<DIV></div>
+					</td>
+					<td class="NonPadded" width="290" height="140" valign="top" rowspan="2">
+						<table width="100%" border="0" cellpadding="0" align="right">
+
+							
+									<tr>
+										<td align="center" width="80" valign="top">
+										
+											<img src="http://images.mls.ca/individual/lowres/1067334.jpg" width="55" height="72"alt="MARY DEFRANCO">
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+										    MARY  DEFRANCO
+										       
+										       
+                                         </div>
+											
+											Broker
+											
+
+							                
+									        
+									        
+                                                   
+                                                
+                                                   <div>Telephone: 613-823-3642</div>
+
+                                                
+                                                   
+                                                
+                                	        
+                                            
+                                                      
+                                                
+                                                      <div><a href="javascript:EmailRealtor(7246552,'oSnIuSIzssFavpgWe0XCtA','693194', 3, '6955311');">Email REALTOR®</a><br></div>
+                                                
+                                                      
+                                                
+                                	        
+                                            
+                                                      <div><a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.callthedefrancos.com&t=ind" target="_blank">REALTOR® Website</a><br></div>
+                                                
+										</td>
+									</tr>
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+									     <td valign="top">
+									        </td>
+
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>COLDWELL BANKER SARAZEN REALTY, BROKERAGE</div>
+											
+											<div>1090 AMBLESIDE DRIVE<br>OTTAWA, Ontario &nbsp; K2B 8G7<br></div>
+										    
+										      
+										    
+                                                      
+                                                
+                                                      
+                                                
+                                                      
+                                                
+                                                      <div>Telephone: 613-596-4133</div>
+                                                
+                                                      <div>Toll Free: 800-371-9712</div>
+
+                                                
+                                                      <div>Fax: 613-596-5905</div>
+                                                
+                                                      
+                                                
+                                                      
+                                                
+                                                      
+                                                
+                                	        
+                                            
+                                	        
+                                            
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+								
+									<tr>
+										<td align="center" width="80" valign="top">
+										
+											<img src="http://images.mls.ca/individual/lowres/1067333.jpg" width="55" height="72"alt="FRANK DEFRANCO">
+																		
+										<td valign="top">
+
+										<div class='LabelSecondary'>
+										    FRANK  DEFRANCO
+										       
+										       
+                                         </div>
+											
+											Broker
+											
+
+							                
+									        
+									        
+                                                   <div>Telephone: 613-823-3642</div>
+                                                
+                                                   
+                                                
+                                                   
+                                                
+                                	        
+                                            
+                                                      <div><a href="javascript:EmailRealtor(6945660,'YbPHXZpJPMRylEOHPCKdtA','693194', 3, '6955311');">Email REALTOR®</a><br></div>
+                                                
+                                                      
+                                                
+                                                      
+                                                
+                                	        
+                                            
+                                                      
+                                                
+										</td>
+									</tr>
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+
+									     <td valign="top">
+									        </td>
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>COLDWELL BANKER SARAZEN REALTY, BROKERAGE</div>
+											
+											<div>1090 AMBLESIDE DRIVE<br>OTTAWA, Ontario &nbsp; K2B 8G7<br></div>
+										    
+										      
+										    
+                                                      <div>Telephone: 613-596-4133</div>
+
+                                                
+                                                      <div>Toll Free: 800-371-9712</div>
+                                                
+                                                      <div>Fax: 613-596-5905</div>
+                                                
+                                                      
+                                                
+                                                      
+                                                
+                                                      
+                                                
+                                                      
+                                                
+                                                      
+                                                
+                                                      
+                                                
+                                	        
+                                            
+                                	        
+                                            
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+								
+									<tr>
+										<td align="center" width="80" valign="top">
+										
+											<img src="http://images.mls.ca/individual/lowres/1172009.jpg" width="55" height="72"alt="TRAVIS DEFRANCO">
+
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+										    TRAVIS  DEFRANCO
+										       
+										       
+                                         </div>
+											
+											Salesperson
+											
+
+							                
+									        
+									        
+                                                   
+                                                
+                                                   
+                                                
+                                                   <div>Telephone: 613-823-3642</div>
+                                                
+                                	        
+                                            
+                                                      
+                                                
+                                                      
+                                                
+                                                      <div><a href="javascript:EmailRealtor(15011382,'3mprGwMjIhGIJkkb3IqyYg','693194', 3, '6955311');">Email REALTOR®</a><br></div>
+                                                
+                                	        
+                                            
+                                                      
+                                                
+										</td>
+									</tr>
+
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+									     <td valign="top">
+									        </td>
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>COLDWELL BANKER SARAZEN REALTY, BROKERAGE</div>
+											
+											<div>1090 AMBLESIDE DRIVE<br>OTTAWA, Ontario &nbsp; K2B 8G7<br></div>
+
+										    
+										      
+										    
+                                                      
+                                                
+                                                      
+                                                
+                                                      
+                                                
+                                                      
+                                                
+                                                      
+                                                
+                                                      
+                                                
+                                                      <div>Telephone: 613-596-4133</div>
+                                                
+                                                      <div>Toll Free: 800-371-9712</div>
+                                                
+                                                      <div>Fax: 613-596-5905</div>
+                                                
+                                	        
+                                            
+                                	        
+                                            
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+								
+						</table>
+
+					</td>
+				</tr>
+				<tr>
+					<td valign="bottom" colspan="2" class="Features">
+
+<span class="FeatureIcons">
+
+
+
+
+
+
+
+</span>
+
+</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+<tr><td>&nbsp;</td></tr>
+
+
+<table class="MainHeadingTable" width="99%" border="0" align="center">
+	<tr>
+
+		<td class="MainHeadingSecondary" width="135">
+			$212,900
+			
+
+		</td>
+		<td class="MainHeadingSecondary" colspan="2">
+		 Morgans' Grant / South March 9008, M-Kanata, Nepean, Ottawa, Eastern 8, Ontario</td>
+
+		</td>
+	</tr>
+</table><br>
+<table width="99%"  align="center">
+
+	<tr>
+		<td class="NonPadded" colspan="2">
+			<table width="100%" border="0">
+				<tr>
+					<td valign="top" width="150">
+						<a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6862905">
+						<img class="PhotoResults" alt='690579                   ' src='http://images.mls.ca/listings/reb76/lowres/9/690579_1.jpg'></A>
+					</td>
+					<td  valign="top" width="300">
+
+						<span class="Label" id="ReferenceNumber"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6862905">MLS&reg;: 690579                   </A> </span><span class='PropResultsRealEstateType'>( Single Family ) </span>
+						<div class="Text">3 bedrm, 2 bathroom rowunit in family oriented neighbourhood. Nice location kitty corner to park. Recently  updated basement with recroom and bathroom. Laminate floors on main level and in basement. Large eat in kitcehn. C/air, fridege and stove, sin</div>				
+						
+						<div style="padding-top:3px"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6862905">For More Information</a></div>
+					     </div>
+					</td>
+					<td class="NonPadded" width="290" height="140" valign="top" rowspan="2">
+
+						<table width="100%" border="0" cellpadding="0" align="right">
+							
+									<tr>
+										<td align="center" width="80" valign="top">
+										
+											
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+										    CHRISTOPHER  HOLLANDS
+										       
+										       
+                                         </div>
+											
+											Salesperson
+											
+
+							                
+									        
+									        
+                                                   <div>Telephone: 613-797-3977</div>
+
+                                                
+                                                   
+                                                
+                                	        
+                                            
+                                                      <div><a href="javascript:EmailRealtor(6729952,'9zqCQiHUCqnAUbDAhQgQgw','690579', 3, '6862905');">Email REALTOR®</a><br></div>
+                                                
+                                                      
+                                                
+                                	        
+                                            
+                                                      <div><a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.ChrisandMonicaHollands.com&t=ind" target="_blank">REALTOR® Website</a><br></div>
+                                                
+										</td>
+									</tr>
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+									     <td valign="top">
+									        <img src="http://images.mls.ca/organization/en-CA/lowres/default/royallepage.gif" width="75" height="36"alt="ROYAL LEPAGE TEAM REALTY, BROKERAGE"></td>
+
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>ROYAL LEPAGE TEAM REALTY, BROKERAGE</div>
+											
+											<div>484 HAZELDEAN ROAD<br>KANATA, Ontario &nbsp; K2L 1V4<br></div>
+										    
+										      
+										    
+                                                      <div>Telephone: 613-592-6400</div>
+                                                
+                                                      <div>Fax: 613-592-4945</div>
+
+                                                
+                                                      
+                                                
+                                                      
+                                                
+                                	        
+                                            
+                                	        
+                                            
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+								
+									<tr>
+										<td align="center" width="80" valign="top">
+										
+											
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+										    MONICA  HOLLANDS
+										       
+										       
+                                         </div>
+
+											
+											Salesperson
+											
+
+							                
+									        
+									        
+                                                   
+                                                
+                                                   <div>Telephone: 613-864-7975</div>
+                                                
+                                	        
+                                            
+                                                      
+                                                
+                                                      <div><a href="javascript:EmailRealtor(6729955,'kDLk4S+2T0+vqAGMrJ2DIA','690579', 3, '6862905');">Email REALTOR®</a><br></div>
+                                                
+                                	        
+                                            
+                                                      
+                                                
+										</td>
+									</tr>
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+									     <td valign="top">
+									        <img src="http://images.mls.ca/organization/en-CA/lowres/default/royallepage.gif" width="75" height="36"alt="ROYAL LEPAGE TEAM REALTY, BROKERAGE"></td>
+
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>ROYAL LEPAGE TEAM REALTY, BROKERAGE</div>
+											
+											<div>484 HAZELDEAN ROAD<br>KANATA, Ontario &nbsp; K2L 1V4<br></div>
+										    
+										      
+										    
+                                                      
+                                                
+                                                      
+                                                
+                                                      <div>Telephone: 613-592-6400</div>
+                                                
+                                                      <div>Fax: 613-592-4945</div>
+
+                                                
+                                	        
+                                            
+                                	        
+                                            
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+								
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td valign="bottom" colspan="2" class="Features">
+
+<span class="FeatureIcons">
+
+
+
+
+
+
+
+
+</span>
+
+</td>
+				</tr>
+			</table>
+		</td>
+
+	</tr>
+<tr><td>&nbsp;</td></tr>
+
+
+<table class="MainHeadingTable" width="99%" border="0" align="center">
+	<tr>
+		<td class="MainHeadingSecondary" width="135">
+			$214,900
+			
+
+		</td>
+		<td class="MainHeadingSecondary" colspan="2">
+		 Emerald Meadows 9010, M-Kanata, Nepean, Ottawa, Eastern 8, Ontario</td>
+
+		</td>
+	</tr>
+</table><br>
+<table width="99%"  align="center">
+	<tr>
+		<td class="NonPadded" colspan="2">
+			<table width="100%" border="0">
+				<tr>
+					<td valign="top" width="150">
+
+						<a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6873457">
+						<img class="PhotoResults" alt='690859                   ' src='http://images.mls.ca/listings/reb76/lowres/9/690859_1.jpg'></A>
+					</td>
+					<td  valign="top" width="300">
+						<span class="Label" id="ReferenceNumber"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6873457">MLS&reg;: 690859                   </A> </span><span class='PropResultsRealEstateType'>( Single Family ) </span>
+						<div class="Text">Immediate possession available for this well maintained end unit in family oriented Emerald Meadows.Features include ceramic entry, vaulted ceiling (living room),attractive eat-in Kitchen with patio door access to tiered deck and fully fenced yard, f</div>				
+						
+						<div style="padding-top:3px"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6873457">For More Information</a></div>
+
+					     </div>
+					</td>
+					<td class="NonPadded" width="290" height="140" valign="top" rowspan="2">
+						<table width="100%" border="0" cellpadding="0" align="right">
+							
+									<tr>
+										<td align="center" width="80" valign="top">
+										
+											<img src="http://images.mls.ca/individual/lowres/1067869.jpg" width="55" height="72"alt="DALE DELAHUNT">
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+
+										    DALE  DELAHUNT
+										       
+										       
+                                         </div>
+											
+											Salesperson
+											
+
+							                
+									        
+									        
+                                                   <div>Telephone: 613-722-3055</div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="javascript:EmailRealtor(10455617,'A04fJbS50nxcAM7JfMAGMg','690859', 3, '6873457');">Email REALTOR®</a><br></div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.daledelahunt.com&t=ind" target="_blank">REALTOR® Website</a><br></div>
+                                                
+										</td>
+									</tr>
+
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+									     <td valign="top">
+									        <img src="http://images.mls.ca/organization/en-CA/lowres/default/royallepage.gif" width="75" height="36"alt="ROYAL LEPAGE PERFORMANCE REALTY, BROKERAGE, INDEPENDENTLY OWNED & OPERATED"></td>
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>ROYAL LEPAGE PERFORMANCE REALTY, BROKERAGE, INDEPENDENTLY OWNED & OPERATED</div>
+											
+											<div>#201-1500 BANK STREET<br>OTTAWA, Ontario &nbsp; K1H 7Z2<br></div>
+
+										    
+										      
+										    
+                                                      <div>Telephone: 613-733-9100</div>
+                                                
+                                                      <div>Toll Free: 877-837-8885</div>
+                                                
+                                                      <div>Fax: 613-733-1450</div>
+                                                
+                                	        
+                                            
+                                	        
+                                            
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+								
+						</table>
+
+					</td>
+				</tr>
+				<tr>
+					<td valign="bottom" colspan="2" class="Features">
+
+<span class="FeatureIcons">
+
+
+
+
+
+
+
+</span>
+
+</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+<tr><td>&nbsp;</td></tr>
+
+
+<table class="MainHeadingTable" width="99%" border="0" align="center">
+	<tr>
+
+		<td class="MainHeadingSecondary" width="135">
+			$214,900
+			
+
+		</td>
+		<td class="MainHeadingSecondary" colspan="2">
+		 Glencairn / Hazeldean 9003, M-Kanata, Nepean, Ottawa, Eastern 8, Ontario</td>
+
+		</td>
+	</tr>
+</table><br>
+<table width="99%"  align="center">
+
+	<tr>
+		<td class="NonPadded" colspan="2">
+			<table width="100%" border="0">
+				<tr>
+					<td valign="top" width="150">
+						<a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6930474">
+						<img class="PhotoResults" alt='692268                   ' src='http://images.mls.ca/listings/reb76/lowres/8/692268_1.jpg'></A>
+					</td>
+					<td  valign="top" width="300">
+
+						<span class="Label" id="ReferenceNumber"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6930474">MLS&reg;: 692268                   </A> </span><span class='PropResultsRealEstateType'>( Single Family ) </span>
+						<div class="Text">Wonderful starter home in mature area of Kanata.  Semi-detached, 2 storey with 3 bedrooms and fully finished basement.  Kitchen remodeled in 2000, all new windows on back of home 2007, front windows replaced in 2002, furnace in 2001.  Double wide pav</div>				
+						
+						<div style="padding-top:3px"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6930474">For More Information</a></div>
+					     </div>
+					</td>
+					<td class="NonPadded" width="290" height="140" valign="top" rowspan="2">
+
+						<table width="100%" border="0" cellpadding="0" align="right">
+							
+									<tr>
+										<td align="center" width="80" valign="top">
+										
+											<img src="http://images.mls.ca/individual/lowres/1146545.jpg" width="55" height="72"alt="KRIS SHERRY">
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+										    KRIS  SHERRY
+										       
+										       
+                                         </div>
+											
+											Salesperson
+											
+
+							                
+									        
+									        
+                                                   <div>Telephone: 613-721-4210</div>
+
+                                                
+                                	        
+                                            
+                                                      <div><a href="javascript:EmailRealtor(6732362,'uqf1IovUBP1lZKS0ISEJqQ','692268', 3, '6930474');">Email REALTOR®</a><br></div>
+                                                
+                                	        
+                                            
+										</td>
+									</tr>
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+									     <td valign="top">
+									        <img src="http://images.mls.ca/organization/en-CA/lowres/1125368.jpg" width="75" height="36"alt="KELLER WILLIAMS VIP REALTY, BROKERAGE"></td>
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>KELLER WILLIAMS VIP REALTY, BROKERAGE</div>
+
+											
+											<div>245 STAFFORD ROAD, W, 3RD FLR.<br>OTTAWA, Ontario &nbsp; K2H 9E8<br></div>
+										    
+										      
+										    
+                                                      <div>Telephone: 613-829-1818</div>
+                                                
+                                                      <div>Fax: 613-829-3223</div>
+                                                
+                                	        
+                                            
+                                	        
+                                            
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+
+								
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td valign="bottom" colspan="2" class="Features">
+
+<span class="FeatureIcons">
+
+
+
+
+<a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.obeo.com%2f460487&t=multimedia" id="_ctl0_PropertyResults_rptListings__ctl10__ctl0_eFeatureIcons_lnkMultimedia" style="CURSOR: pointer" target="_blank"><img src="http://www.mls.ca//presentation/images/en-CA/icons/virtualTour.gif" id="_ctl0_PropertyResults_rptListings__ctl10__ctl0_eFeatureIcons_ImgMultimedia" alt="View Multimedia" /></a>
+
+
+
+</span>
+
+</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+<tr><td>&nbsp;</td></tr>
+
+
+<table class="MainHeadingTable" width="99%" border="0" align="center">
+	<tr>
+		<td class="MainHeadingSecondary" width="135">
+			$214,900
+			
+
+		</td>
+		<td class="MainHeadingSecondary" colspan="2">
+		 Glencairn / Hazeldean 9003, M-Kanata, Nepean, Ottawa, Eastern 8, Ontario</td>
+
+		</td>
+	</tr>
+
+</table><br>
+<table width="99%"  align="center">
+	<tr>
+		<td class="NonPadded" colspan="2">
+			<table width="100%" border="0">
+				<tr>
+					<td valign="top" width="150">
+						<a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6938080">
+						<img class="PhotoResults" alt='692580                   ' src='http://images.mls.ca/listings/reb76/lowres/0/692580_1.jpg'></A>
+					</td>
+
+					<td  valign="top" width="300">
+						<span class="Label" id="ReferenceNumber"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6938080">MLS&reg;: 692580                   </A> </span><span class='PropResultsRealEstateType'>( Single Family ) </span>
+						<div class="Text">Immaculate semi-detached bungalow on beautifully landscaped lot with interlock brick patio and walkway. The sun-filled, spacious rooms are tastefully decorated in neutral tones. Updates include newly renovated bathrooms, vinyl windows, newer roof and</div>				
+						
+						<div style="padding-top:3px"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6938080">For More Information</a></div>
+					     </div>
+					</td>
+
+					<td class="NonPadded" width="290" height="140" valign="top" rowspan="2">
+						<table width="100%" border="0" cellpadding="0" align="right">
+							
+									<tr>
+										<td align="center" width="80" valign="top">
+										
+											<img src="http://images.mls.ca/individual/lowres/1174978.jpg" width="55" height="72"alt="JULIE KNOWLES">
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+										    JULIE  KNOWLES
+										       
+										       
+                                         </div>
+
+											
+											Salesperson
+											
+
+							                
+									        
+									        
+                                                   <div>Telephone: 613-203-7333</div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="javascript:EmailRealtor(10034751,'blaBBcLtc3GZxBoRZJa2/Q','692580', 3, '6938080');">Email REALTOR®</a><br></div>
+                                                
+                                	        
+                                            
+										</td>
+									</tr>
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+									     <td valign="top">
+									        <img src="http://images.mls.ca/organization/en-CA/lowres/default/royallepage.gif" width="75" height="36"alt="ROYAL LEPAGE PERFORMANCE REALTY, BROKERAGE, INDEPENDENTLY OWNED & OPERATED"></td>
+
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>ROYAL LEPAGE PERFORMANCE REALTY, BROKERAGE, INDEPENDENTLY OWNED & OPERATED</div>
+											
+											<div>#107-250 CENTRUM BLVD.<br>ORLEANS, Ontario &nbsp; K1E 3J1<br></div>
+										    
+										      
+										    
+                                                      <div>Telephone: 613-830-3350</div>
+                                                
+                                                      <div>Toll Free: 888-830-8757</div>
+
+                                                
+                                                      <div>Fax: 613-830-0759</div>
+                                                
+                                	        
+                                            
+                                	        
+                                            
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+								
+						</table>
+					</td>
+				</tr>
+				<tr>
+
+					<td valign="bottom" colspan="2" class="Features">
+
+<span class="FeatureIcons">
+
+
+
+
+
+
+
+
+</span>
+
+</td>
+				</tr>
+
+			</table>
+		</td>
+	</tr>
+<tr><td>&nbsp;</td></tr>
+
+
+<table class="MainHeadingTable" width="99%" border="0" align="center">
+	<tr>
+		<td class="MainHeadingSecondary" width="135">
+			$214,900
+			
+
+		</td>
+
+		<td class="MainHeadingSecondary" colspan="2">
+		 Barrhaven /Cedargrove / Frasredale 7703, M-Kanata, Nepean, Ottawa, Eastern 8, Ontario</td>
+
+		</td>
+	</tr>
+</table><br>
+<table width="99%"  align="center">
+	<tr>
+		<td class="NonPadded" colspan="2">
+			<table width="100%" border="0">
+
+				<tr>
+					<td valign="top" width="150">
+						<a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6943957">
+						<img class="PhotoResults" alt='692786                   ' src='http://images.mls.ca/listings/reb76/lowres/6/692786_1.jpg'></A>
+					</td>
+					<td  valign="top" width="300">
+						<span class="Label" id="ReferenceNumber"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6943957">MLS&reg;: 692786                   </A> </span><span class='PropResultsRealEstateType'>( Single Family ) </span>
+
+						<div class="Text">Well maintained Freehold townhome.Perfect for 1st time buyers.Many quality features & upgrades.Bridgewater model w/new roof(04),Freshly painted(08),New C/Air (01),Laneway re-sealed(07),Nice size Living/Dinrm w/wood burning FFp,Patio door to Large fen</div>				
+						
+						<div style="padding-top:3px"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6943957">For More Information</a></div>
+					     </div>
+					</td>
+					<td class="NonPadded" width="290" height="140" valign="top" rowspan="2">
+						<table width="100%" border="0" cellpadding="0" align="right">
+							
+									<tr>
+										<td align="center" width="80" valign="top">
+
+										
+											<img src="http://images.mls.ca/individual/lowres/1067682.jpg" width="55" height="72"alt="JOANNE GONEAU">
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+										    JOANNE A GONEAU
+										       
+										       
+                                         </div>
+											
+											Broker
+											
+
+							                
+									        
+									        
+                                                   <div>Telephone: 613-851-5982</div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="javascript:EmailRealtor(11326604,'i4HrcuTNYVpDliEUz657iA','692786', 3, '6943957');">Email REALTOR®</a><br></div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.joannegoneau.com&t=ind" target="_blank">REALTOR® Website</a><br></div>
+
+                                                
+										</td>
+									</tr>
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+									     <td valign="top">
+									        <img src="http://images.mls.ca/organization/en-CA/lowres/default/remaxoa.gif" width="75" height="36"alt="RE/MAX METRO-CITY REALTY LIMITED, BROKERAGE"></td>
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>RE/MAX METRO-CITY REALTY LIMITED, BROKERAGE</div>
+											
+											<div>31 NORTHSIDE ROAD<br>OTTAWA, Ontario &nbsp; K2H 8S1<br></div>
+
+										    
+										      
+										    
+                                                      <div>Telephone: 613-596-1651</div>
+                                                
+                                                      <div>Fax: 613-596-1989</div>
+                                                
+                                	        
+                                            
+                                	        
+                                            
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+								
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td valign="bottom" colspan="2" class="Features">
+
+<span class="FeatureIcons">
+
+
+
+
+
+
+
+
+</span>
+
+</td>
+
+				</tr>
+			</table>
+		</td>
+	</tr>
+<tr><td>&nbsp;</td></tr>
+
+
+<table class="MainHeadingTable" width="99%" border="0" align="center">
+	<tr>
+		<td class="MainHeadingSecondary" width="135">
+			$214,900
+			
+
+		</td>
+
+		<td class="MainHeadingSecondary" colspan="2">
+		 Barrhaven / Pheasant Run 7701, M-Kanata, Nepean, Ottawa, Eastern 8, Ontario</td>
+
+		</td>
+	</tr>
+</table><br>
+<table width="99%"  align="center">
+	<tr>
+		<td class="NonPadded" colspan="2">
+			<table width="100%" border="0">
+
+				<tr>
+					<td valign="top" width="150">
+						<a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6966310">
+						<img class="PhotoResults" alt='693644                   ' src='http://images.mls.ca/listings/reb76/lowres/4/693644_1.jpg'></A>
+					</td>
+					<td  valign="top" width="300">
+						<span class="Label" id="ReferenceNumber"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6966310">MLS&reg;: 693644                   </A> </span><span class='PropResultsRealEstateType'>( Single Family ) </span>
+
+						<div class="Text">End unit freehold townhouse with 3 bedrooms, 1.5 baths and attached garage on quiet street.  Features included L-shaped living /dining room, bright kitchen, large master bedroom with cheater ensuite, fenced yard and basement rec-room for additional f</div>				
+						
+						<div style="padding-top:3px"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6966310">For More Information</a></div>
+					     </div>
+					</td>
+					<td class="NonPadded" width="290" height="140" valign="top" rowspan="2">
+						<table width="100%" border="0" cellpadding="0" align="right">
+							
+									<tr>
+										<td align="center" width="80" valign="top">
+
+										
+											<img src="http://images.mls.ca/individual/lowres/1139268.jpg" width="55" height="72"alt="DONNA FLOYD">
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+										    DONNA  FLOYD
+										       
+										       
+                                         </div>
+											
+											Salesperson
+											
+
+							                
+									        
+									        
+                                                   
+                                                
+                                                   <div>Telephone: 613-236-5959</div>
+                                                
+                                	        
+                                            
+                                                      
+                                                
+                                                      <div><a href="javascript:EmailRealtor(6999481,'QAy75mjDDzvzjJJ7NeMuHQ','693644', 3, '6966310');">Email REALTOR®</a><br></div>
+                                                
+                                	        
+                                            
+                                                      
+                                                
+                                                      <div><a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.floydgroup.ca&t=ind" target="_blank">REALTOR® Website</a><br></div>
+
+                                                
+										</td>
+									</tr>
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+									     <td valign="top">
+									        </td>
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>KELLER WILLIAMS OTTAWA REALTY, BROKERAGE</div>
+											
+											<div>610 BRONSON AVENUE<br>OTTAWA, Ontario &nbsp; K1S 4E6<br></div>
+
+										    
+										      
+										    
+                                                      
+                                                
+                                                      
+                                                
+                                                      <div>Telephone: 613-236-5959</div>
+                                                
+                                                      <div>Fax: 613-236-1515</div>
+                                                
+                                	        
+                                            
+                                                      
+                                                
+                                                      <div><a href="javascript:EmailCompany(4066733,'aTp1doFQBjbQJh5yBw4g0Q','693644', 3, '6966310');">Email Office</a><br></div>
+                                                
+                                	        
+                                            
+                                                      
+                                                
+                                                      <div><a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.kwottawa.ca&t=org" target="_blank">Office Website</a><br></div>
+                                                
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+
+								
+									<tr>
+										<td align="center" width="80" valign="top">
+										
+											<img src="http://images.mls.ca/individual/lowres/1067639.jpg" width="55" height="72"alt="GLENN FLOYD">
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+										    GLENN  FLOYD
+										       
+										       
+                                         </div>
+											
+											Salesperson
+											
+
+							                
+									        
+									        
+                                                   <div>Telephone: 613-236-5959</div>
+
+                                                
+                                                   
+                                                
+                                	        
+                                            
+                                                      <div><a href="javascript:EmailRealtor(6729376,'dGOub1+zrnU2L6R9JQ6maA','693644', 3, '6966310');">Email REALTOR®</a><br></div>
+                                                
+                                                      
+                                                
+                                	        
+                                            
+                                                      <div><a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.floydgroup.ca&t=ind" target="_blank">REALTOR® Website</a><br></div>
+                                                
+                                                      
+                                                
+										</td>
+									</tr>
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+									     <td valign="top">
+									        </td>
+
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>KELLER WILLIAMS OTTAWA REALTY, BROKERAGE</div>
+											
+											<div>610 BRONSON AVENUE<br>OTTAWA, Ontario &nbsp; K1S 4E6<br></div>
+										    
+										      
+										    
+                                                      <div>Telephone: 613-236-5959</div>
+                                                
+                                                      <div>Fax: 613-236-1515</div>
+
+                                                
+                                                      
+                                                
+                                                      
+                                                
+                                	        
+                                            
+                                                      <div><a href="javascript:EmailCompany(4066733,'aTp1doFQBjbQJh5yBw4g0Q','693644', 3, '6966310');">Email Office</a><br></div>
+                                                
+                                                      
+                                                
+                                	        
+                                            
+                                                      <div><a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.kwottawa.ca&t=org" target="_blank">Office Website</a><br></div>
+                                                
+                                                      
+                                                
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+								
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td valign="bottom" colspan="2" class="Features">
+
+<span class="FeatureIcons">
+
+
+
+
+<a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.Obeo.com%2f450784&t=multimedia" id="_ctl0_PropertyResults_rptListings__ctl13__ctl0_eFeatureIcons_lnkMultimedia" style="CURSOR: pointer" target="_blank"><img src="http://www.mls.ca//presentation/images/en-CA/icons/virtualTour.gif" id="_ctl0_PropertyResults_rptListings__ctl13__ctl0_eFeatureIcons_ImgMultimedia" alt="View Multimedia" /></a>
+
+
+
+</span>
+
+</td>
+
+				</tr>
+			</table>
+		</td>
+	</tr>
+<tr><td>&nbsp;</td></tr>
+
+
+<table class="MainHeadingTable" width="99%" border="0" align="center">
+	<tr>
+		<td class="MainHeadingSecondary" width="135">
+			$214,900
+			
+
+		</td>
+
+		<td class="MainHeadingSecondary" colspan="2">
+		 Bridlewood 9004, M-Kanata, Nepean, Ottawa, Eastern 8, Ontario</td>
+
+		</td>
+	</tr>
+</table><br>
+<table width="99%"  align="center">
+	<tr>
+		<td class="NonPadded" colspan="2">
+			<table width="100%" border="0">
+
+				<tr>
+					<td valign="top" width="150">
+						<a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6966324">
+						<img class="PhotoResults" alt='693646                   ' src='http://images.mls.ca/listings/reb76/lowres/6/693646_1.jpg'></A>
+					</td>
+					<td  valign="top" width="300">
+						<span class="Label" id="ReferenceNumber"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6966324">MLS&reg;: 693646                   </A> </span><span class='PropResultsRealEstateType'>( Single Family ) </span>
+
+						<div class="Text">67 Waterton Crescent.Perfect 3 bedroom freehold unit situated on quiet crescent in Bridlewood.Bright eatin kitchen,separate diningroom,fireplace in livingroom.Masterbedroom suite has full ensuite bathroom,finished recrm in lower level.Upgrades includ</div>				
+						
+						<div style="padding-top:3px"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6966324">For More Information</a></div>
+					     </div>
+					</td>
+					<td class="NonPadded" width="290" height="140" valign="top" rowspan="2">
+						<table width="100%" border="0" cellpadding="0" align="right">
+							
+									<tr>
+										<td align="center" width="80" valign="top">
+
+										
+											<img src="http://images.mls.ca/individual/lowres/1066910.jpg" width="55" height="72"alt="JOHN SPAGNOLI">
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+										    JOHN  SPAGNOLI
+										       
+										       
+                                         </div>
+											
+											Salesperson
+											
+
+							                
+									        
+									        
+                                                   <div>Telephone: 613-592-6400</div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="javascript:EmailRealtor(5906927,'A5mImlF8mMuF+mV12aUZMw','693646', 3, '6966324');">Email REALTOR®</a><br></div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.johnspagnoli.com&t=ind" target="_blank">REALTOR® Website</a><br></div>
+
+                                                
+										</td>
+									</tr>
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+									     <td valign="top">
+									        <img src="http://images.mls.ca/organization/en-CA/lowres/default/royallepage.gif" width="75" height="36"alt="ROYAL LEPAGE TEAM REALTY, BROKERAGE"></td>
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>ROYAL LEPAGE TEAM REALTY, BROKERAGE</div>
+											
+											<div>484 HAZELDEAN ROAD<br>KANATA, Ontario &nbsp; K2L 1V4<br></div>
+
+										    
+										      
+										    
+                                                      <div>Telephone: 613-592-6400</div>
+                                                
+                                                      <div>Fax: 613-592-4945</div>
+                                                
+                                	        
+                                            
+                                	        
+                                            
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+								
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td valign="bottom" colspan="2" class="Features">
+
+<span class="FeatureIcons">
+
+
+
+
+
+
+
+
+</span>
+
+</td>
+
+				</tr>
+			</table>
+		</td>
+	</tr>
+<tr><td>&nbsp;</td></tr>
+
+
+<table class="MainHeadingTable" width="99%" border="0" align="center">
+	<tr>
+		<td class="MainHeadingSecondary" width="135">
+			$219,900
+			
+
+		</td>
+
+		<td class="MainHeadingSecondary" colspan="2">
+		 Glencairn / Hazeldean 9003, M-Kanata, Nepean, Ottawa, Eastern 8, Ontario</td>
+
+		</td>
+	</tr>
+</table><br>
+<table width="99%"  align="center">
+	<tr>
+		<td class="NonPadded" colspan="2">
+			<table width="100%" border="0">
+
+				<tr>
+					<td valign="top" width="150">
+						<a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6843825">
+						<img class="PhotoResults" alt='690028                   ' src='http://images.mls.ca/listings/reb76/lowres/8/690028_1.jpg'></A>
+					</td>
+					<td  valign="top" width="300">
+						<span class="Label" id="ReferenceNumber"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6843825">MLS&reg;: 690028                   </A> </span><span class='PropResultsRealEstateType'>( Single Family ) </span>
+
+						<div class="Text">**2 MELANIE CR.,OPEN HOUSE SUN.APR 27,2-4** Great starter home in convenient Glen Cairn. Fabulous renovated kitchen has large eat-in area, lots of white cabinetry/counters, built-in dishwasher, ceramic floor/backsplash. Laminate floors, deep baseboar</div>				
+						
+						<div style="padding-top:3px"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6843825">For More Information</a></div>
+					     </div>
+					</td>
+					<td class="NonPadded" width="290" height="140" valign="top" rowspan="2">
+						<table width="100%" border="0" cellpadding="0" align="right">
+							
+									<tr>
+										<td align="center" width="80" valign="top">
+
+										
+											<img src="http://images.mls.ca/individual/lowres/1146261.jpg" width="55" height="72"alt="EMMA MCLENNAN">
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+										    EMMA  MCLENNAN
+										       
+										       
+                                         </div>
+											
+											Salesperson
+											
+
+							                
+									        
+									        
+                                                   <div>Telephone: 613-795-6891</div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="javascript:EmailRealtor(6731144,'xmZaFEHqZ1FfcbDeG4jM3A','690028', 3, '6843825');">Email REALTOR®</a><br></div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.EmmaSellsHomes.com&t=ind" target="_blank">REALTOR® Website</a><br></div>
+
+                                                
+										</td>
+									</tr>
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+									     <td valign="top">
+									        <img src="http://images.mls.ca/organization/en-CA/lowres/default/remaxoa.gif" width="75" height="36"alt="RE/MAX AFFILIATES REALTY LTD., BROKERAGE, INDEPENDENTLY OWNED & OPERATED"></td>
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>RE/MAX AFFILIATES REALTY LTD., BROKERAGE, INDEPENDENTLY OWNED & OPERATED</div>
+
+											
+											<div>129 RIOCAN AVENUE<br>OTTAWA, Ontario &nbsp; K2J 5G3<br></div>
+										    
+										      
+										    
+                                                      <div>Telephone: 613-216-1755</div>
+                                                
+                                                      <div>Fax: 613-825-0878</div>
+                                                
+                                	        
+                                            
+                                	        
+                                            
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+
+								
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td valign="bottom" colspan="2" class="Features">
+
+<span class="FeatureIcons">
+
+
+
+
+<a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.photohug.com%2fMcLennan23%2f&t=multimedia" id="_ctl0_PropertyResults_rptListings__ctl15__ctl0_eFeatureIcons_lnkMultimedia" style="CURSOR: pointer" target="_blank"><img src="http://www.mls.ca//presentation/images/en-CA/icons/virtualTour.gif" id="_ctl0_PropertyResults_rptListings__ctl15__ctl0_eFeatureIcons_ImgMultimedia" alt="View Multimedia" /></a>
+
+
+
+</span>
+
+</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+<tr><td>&nbsp;</td></tr>
+
+
+<table class="MainHeadingTable" width="99%" border="0" align="center">
+	<tr>
+		<td class="MainHeadingSecondary" width="135">
+			$219,900
+			
+
+		</td>
+		<td class="MainHeadingSecondary" colspan="2">
+		 Barrhaven / Longfields / Davidson Heights 7706, M-Kanata, Nepean, Ottawa, Eastern 8, Ontario</td>
+
+		</td>
+	</tr>
+
+</table><br>
+<table width="99%"  align="center">
+	<tr>
+		<td class="NonPadded" colspan="2">
+			<table width="100%" border="0">
+				<tr>
+					<td valign="top" width="150">
+						<a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6892478">
+						<img class="PhotoResults" alt='691421                   ' src='http://images.mls.ca/listings/reb76/lowres/1/691421_1.jpg'></A>
+					</td>
+
+					<td  valign="top" width="300">
+						<span class="Label" id="ReferenceNumber"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6892478">MLS&reg;: 691421                   </A> </span><span class='PropResultsRealEstateType'>( Single Family ) </span>
+						<div class="Text">Open House SUN 2-4 @ 53 Grenadier! Immac!!!Pride of ownership! Decorated in today's neutral colours throughout. Hardwood in lvgroom, dinroom & main flr hallway, ceramic entry & 2 pce,laminate in bedrooms on 2nd level, carpet on stairs only. L-shaped </div>				
+						
+						<div style="padding-top:3px"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6892478">For More Information</a></div>
+					     </div>
+
+					</td>
+					<td class="NonPadded" width="290" height="140" valign="top" rowspan="2">
+						<table width="100%" border="0" cellpadding="0" align="right">
+							
+									<tr>
+										<td align="center" width="80" valign="top">
+										
+											<img src="http://images.mls.ca/individual/lowres/1067751.jpg" width="55" height="72"alt="BEV THOMPSON MVA">
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+										    BEV  THOMPSON MVA
+										       
+										       
+                                         </div>
+
+											
+											Broker
+											
+
+							                
+									        
+									        
+                                                   <div>Telephone: 613-612-6683</div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="javascript:EmailRealtor(6732707,'1ZK2MIHSy5bvcwRnfIcSBA','691421', 3, '6892478');">Email REALTOR®</a><br></div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.bevthompson.com&t=ind" target="_blank">REALTOR® Website</a><br></div>
+                                                
+										</td>
+									</tr>
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+
+									     <td valign="top">
+									        <img src="http://images.mls.ca/organization/en-CA/lowres/1108723.jpg" width="75" height="36"alt="ROYAL LEPAGE TEAM REALTY, BROKERAGE"></td>
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>ROYAL LEPAGE TEAM REALTY, BROKERAGE</div>
+											
+											<div>2900 WOODROFFE AVENUE UNIT 11<br>NEPEAN, Ontario &nbsp; K2J 4G3<br></div>
+										    
+										      
+										    
+                                                      <div>Telephone: 613-825-7653</div>
+
+                                                
+                                                      <div>Toll Free: 888-780-7747</div>
+                                                
+                                                      <div>Fax: 613-825-8762</div>
+                                                
+                                	        
+                                            
+                                	        
+                                            
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+								
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td valign="bottom" colspan="2" class="Features">
+
+<span class="FeatureIcons">
+
+
+
+
+
+
+
+
+</span>
+
+</td>
+
+				</tr>
+			</table>
+		</td>
+	</tr>
+<tr><td>&nbsp;</td></tr>
+
+
+<table class="MainHeadingTable" width="99%" border="0" align="center">
+	<tr>
+		<td class="MainHeadingSecondary" width="135">
+			$219,900
+			
+
+		</td>
+
+		<td class="MainHeadingSecondary" colspan="2">
+		 Glencairn / Hazeldean 9003, M-Kanata, Nepean, Ottawa, Eastern 8, Ontario</td>
+
+		</td>
+	</tr>
+</table><br>
+<table width="99%"  align="center">
+	<tr>
+		<td class="NonPadded" colspan="2">
+			<table width="100%" border="0">
+
+				<tr>
+					<td valign="top" width="150">
+						<a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6909332">
+						<img class="PhotoResults" alt='691811                   ' src='http://images.mls.ca/listings/reb76/lowres/1/691811_1.jpg'></A>
+					</td>
+					<td  valign="top" width="300">
+						<span class="Label" id="ReferenceNumber"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6909332">MLS&reg;: 691811                   </A> </span><span class='PropResultsRealEstateType'>( Single Family ) </span>
+
+						<div class="Text">Pride of Ownership! Very well maintained home on a quiet street. Newer: windows, exterior door, garage door, furnace...the list goes on. Updated kitchen, living room, bedrooms and bathrooms. Private fenced rear yard with a fabulous deck for barbequin</div>				
+						
+						<div style="padding-top:3px"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6909332">For More Information</a></div>
+					     </div>
+					</td>
+					<td class="NonPadded" width="290" height="140" valign="top" rowspan="2">
+						<table width="100%" border="0" cellpadding="0" align="right">
+							
+									<tr>
+										<td align="center" width="80" valign="top">
+
+										
+											<img src="http://images.mls.ca/individual/lowres/1122444.jpg" width="55" height="72"alt="DALE J. WAY">
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+										    DALE J.  WAY
+										       
+										       
+                                         </div>
+											
+											Salesperson
+											
+
+							                
+									        
+									        
+                                                   <div>Telephone: 613-222-9800</div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="javascript:EmailRealtor(11712780,'wpSUTFUAmYiF05rsBwNUEQ','691811', 3, '6909332');">Email REALTOR®</a><br></div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.AskDaleFirst.com&t=ind" target="_blank">REALTOR® Website</a><br></div>
+
+                                                
+										</td>
+									</tr>
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+									     <td valign="top">
+									        </td>
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>KELLER WILLIAMS OTTAWA REALTY, BROKERAGE</div>
+											
+											<div>610 BRONSON AVENUE<br>OTTAWA, Ontario &nbsp; K1S 4E6<br></div>
+
+										    
+										      
+										    
+                                                      <div>Telephone: 613-236-5959</div>
+                                                
+                                                      <div>Fax: 613-236-1515</div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="javascript:EmailCompany(4066733,'aTp1doFQBjbQJh5yBw4g0Q','691811', 3, '6909332');">Email Office</a><br></div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.kwottawa.ca&t=org" target="_blank">Office Website</a><br></div>
+                                                
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+
+								
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td valign="bottom" colspan="2" class="Features">
+
+<span class="FeatureIcons">
+
+
+
+
+
+
+
+</span>
+
+</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+<tr><td>&nbsp;</td></tr>
+
+
+<table class="MainHeadingTable" width="99%" border="0" align="center">
+	<tr>
+		<td class="MainHeadingSecondary" width="135">
+			$219,900
+			
+
+		</td>
+		<td class="MainHeadingSecondary" colspan="2">
+		 Westcliffe Estates 7802, M-Kanata, Nepean, Ottawa, Eastern 8, Ontario</td>
+
+		</td>
+	</tr>
+
+</table><br>
+<table width="99%"  align="center">
+	<tr>
+		<td class="NonPadded" colspan="2">
+			<table width="100%" border="0">
+				<tr>
+					<td valign="top" width="150">
+						<a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6938076">
+						<img class="PhotoResults" alt='692595                   ' src='http://images.mls.ca/listings/reb76/lowres/5/692595_1.jpg'></A>
+					</td>
+
+					<td  valign="top" width="300">
+						<span class="Label" id="ReferenceNumber"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6938076">MLS&reg;: 692595                   </A> </span><span class='PropResultsRealEstateType'>( Single Family ) </span>
+						<div class="Text">Two story row unit in the heart of Bells Corners - Westcliffe Estates. 3 very large bedrooms, 2 baths. Large bedroom can easily be converted back to 4-th bedroom. Many updates. All windows replaced with vinyl windows in 2004. Two car garage. Large ya</div>				
+						
+						<div style="padding-top:3px"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6938076">For More Information</a></div>
+					     </div>
+					</td>
+
+					<td class="NonPadded" width="290" height="140" valign="top" rowspan="2">
+						<table width="100%" border="0" cellpadding="0" align="right">
+							
+									<tr>
+										<td align="center" width="80" valign="top">
+										
+											<img src="http://images.mls.ca/individual/lowres/1101871.jpg" width="55" height="72"alt="JIRI (YIRKA) TWARDEK">
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+										    JIRI (YIRKA)  TWARDEK
+										       
+										       
+                                         </div>
+
+											
+											Salesperson
+											
+
+							                
+									        
+									        
+                                                   <div>Telephone: 613-836-2570</div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="javascript:EmailRealtor(16704528,'vAwQef+xps7cePgFnf3NLg','692595', 3, '6938076');">Email REALTOR®</a><br></div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.yirkatwardek.com&t=ind" target="_blank">REALTOR® Website</a><br></div>
+                                                
+										</td>
+									</tr>
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+
+									     <td valign="top">
+									        <img src="http://images.mls.ca/organization/en-CA/lowres/1004048.jpg" width="75" height="36"alt="CENTURY 21 JOHN DEVRIES LTD., BROKERAGE"></td>
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>CENTURY 21 JOHN DEVRIES LTD., BROKERAGE</div>
+											
+											<div>444 HAZELDEAN ROAD<br>KANATA, Ontario &nbsp; K2L 1V2<br></div>
+										    
+										      
+										    
+                                                      <div>Telephone: 613-836-2570</div>
+
+                                                
+                                                      <div>Fax: 613-836-2619</div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="javascript:EmailCompany(4066492,'NpOy1OmtsAsLu2LG5Zm5RQ','692595', 3, '6938076');">Email Office</a><br></div>
+                                                
+                                	        
+                                            
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+								
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td valign="bottom" colspan="2" class="Features">
+
+<span class="FeatureIcons">
+
+
+
+<a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2ftinyurl.com%2f623rtd&t=multimedia" id="_ctl0_PropertyResults_rptListings__ctl18__ctl0_eFeatureIcons_lnkBrochure" style="CURSOR: pointer" target="_blank"><img src="http://www.mls.ca//presentation/images/en-CA/icons/brochure.gif" id="_ctl0_PropertyResults_rptListings__ctl18__ctl0_eFeatureIcons_ImgBrochure" alt="Brochure" /></a>
+<a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2ftinyurl.com%2f6q3ax3&t=multimedia" id="_ctl0_PropertyResults_rptListings__ctl18__ctl0_eFeatureIcons_lnkMultimedia" style="CURSOR: pointer" target="_blank"><img src="http://www.mls.ca//presentation/images/en-CA/icons/virtualTour.gif" id="_ctl0_PropertyResults_rptListings__ctl18__ctl0_eFeatureIcons_ImgMultimedia" alt="View Multimedia" /></a>
+
+
+
+</span>
+
+</td>
+
+				</tr>
+			</table>
+		</td>
+	</tr>
+<tr><td>&nbsp;</td></tr>
+
+
+<table class="MainHeadingTable" width="99%" border="0" align="center">
+	<tr>
+		<td class="MainHeadingSecondary" width="135">
+			$221,000
+			
+
+		</td>
+
+		<td class="MainHeadingSecondary" colspan="2">
+		 Barrhaven /Cedargrove / Frasredale 7703, M-Kanata, Nepean, Ottawa, Eastern 8, Ontario</td>
+
+		</td>
+	</tr>
+</table><br>
+<table width="99%"  align="center">
+	<tr>
+		<td class="NonPadded" colspan="2">
+			<table width="100%" border="0">
+
+				<tr>
+					<td valign="top" width="150">
+						<a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6943950">
+						<img class="PhotoResults" alt='692785                   ' src='http://images.mls.ca/listings/reb76/lowres/5/692785_1.jpg'></A>
+					</td>
+					<td  valign="top" width="300">
+						<span class="Label" id="ReferenceNumber"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6943950">MLS&reg;: 692785                   </A> </span><span class='PropResultsRealEstateType'>( Single Family ) </span>
+
+						<div class="Text">Wonderful opportunity. Popular New England model (app 1696 sq ft) including builder finished family room with fireplace. 2-storey window for plenty of natural lighting. Hdwd in lvgrm, dinrm & upper hall. Mbdrm has full ensuite with separate vanity. R</div>				
+						
+						<div style="padding-top:3px"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6943950">For More Information</a></div>
+					     </div>
+					</td>
+					<td class="NonPadded" width="290" height="140" valign="top" rowspan="2">
+						<table width="100%" border="0" cellpadding="0" align="right">
+							
+									<tr>
+										<td align="center" width="80" valign="top">
+
+										
+											<img src="http://images.mls.ca/individual/lowres/1068010.jpg" width="55" height="72"alt="LESYA DUNSMOOR">
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+										    LESYA  DUNSMOOR
+										       
+										       
+                                         </div>
+											
+											Salesperson
+											
+
+							                
+									        
+									        
+                                                   <div>Telephone: 613-592-5788</div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="javascript:EmailRealtor(6729204,'Ea9Dv3QdhzXMp+ViEME0kw','692785', 3, '6943950');">Email REALTOR®</a><br></div>
+                                                
+                                	        
+                                            
+										</td>
+
+									</tr>
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+									     <td valign="top">
+									        <img src="http://images.mls.ca/organization/en-CA/lowres/default/royallepage.gif" width="75" height="36"alt="ROYAL LEPAGE TEAM REALTY, BROKERAGE"></td>
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>ROYAL LEPAGE TEAM REALTY, BROKERAGE</div>
+											
+											<div>484 HAZELDEAN ROAD<br>KANATA, Ontario &nbsp; K2L 1V4<br></div>
+
+										    
+										      
+										    
+                                                      <div>Telephone: 613-592-6400</div>
+                                                
+                                                      <div>Fax: 613-592-4945</div>
+                                                
+                                	        
+                                            
+                                	        
+                                            
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+								
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td valign="bottom" colspan="2" class="Features">
+
+<span class="FeatureIcons">
+
+
+
+
+
+
+
+
+</span>
+
+</td>
+
+				</tr>
+			</table>
+		</td>
+	</tr>
+<tr><td>&nbsp;</td></tr>
+
+
+<table class="MainHeadingTable" width="99%" border="0" align="center">
+	<tr>
+		<td class="MainHeadingSecondary" width="135">
+			$221,900
+			
+
+		</td>
+
+		<td class="MainHeadingSecondary" colspan="2">
+		 Barrhaven / Longfields / Davidson Heights 7706, M-Kanata, Nepean, Ottawa, Eastern 8, Ontario</td>
+
+		</td>
+	</tr>
+</table><br>
+<table width="99%"  align="center">
+	<tr>
+		<td class="NonPadded" colspan="2">
+			<table width="100%" border="0">
+
+				<tr>
+					<td valign="top" width="150">
+						<a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6884829">
+						<img class="PhotoResults" alt='691212                   ' src='http://images.mls.ca/listings/reb76/lowres/2/691212_1.jpg'></A>
+					</td>
+					<td  valign="top" width="300">
+						<span class="Label" id="ReferenceNumber"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6884829">MLS&reg;: 691212                   </A> </span><span class='PropResultsRealEstateType'>( Single Family ) </span>
+
+						<div class="Text">Gleaming Hardwood and ceramic tile floors on main level of this spotless and tastefully decorated townhome. Most of main & 2nd levels recently painted in neutral tones. Professionally finished lower level famrm has corner gas fireplace. Professionall</div>				
+						
+						<div style="padding-top:3px"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6884829">For More Information</a></div>
+					     </div>
+					</td>
+					<td class="NonPadded" width="290" height="140" valign="top" rowspan="2">
+						<table width="100%" border="0" cellpadding="0" align="right">
+							
+									<tr>
+										<td align="center" width="80" valign="top">
+
+										
+											<img src="http://images.mls.ca/individual/lowres/1067751.jpg" width="55" height="72"alt="BEV THOMPSON MVA">
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+										    BEV  THOMPSON MVA
+										       
+										       
+                                         </div>
+											
+											Broker
+											
+
+							                
+									        
+									        
+                                                   <div>Telephone: 613-612-6683</div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="javascript:EmailRealtor(6732707,'1ZK2MIHSy5bvcwRnfIcSBA','691212', 3, '6884829');">Email REALTOR®</a><br></div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.bevthompson.com&t=ind" target="_blank">REALTOR® Website</a><br></div>
+
+                                                
+										</td>
+									</tr>
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+									     <td valign="top">
+									        <img src="http://images.mls.ca/organization/en-CA/lowres/1108723.jpg" width="75" height="36"alt="ROYAL LEPAGE TEAM REALTY, BROKERAGE"></td>
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>ROYAL LEPAGE TEAM REALTY, BROKERAGE</div>
+											
+											<div>2900 WOODROFFE AVENUE UNIT 11<br>NEPEAN, Ontario &nbsp; K2J 4G3<br></div>
+
+										    
+										      
+										    
+                                                      <div>Telephone: 613-825-7653</div>
+                                                
+                                                      <div>Toll Free: 888-780-7747</div>
+                                                
+                                                      <div>Fax: 613-825-8762</div>
+                                                
+                                	        
+                                            
+                                	        
+                                            
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+								
+						</table>
+
+					</td>
+				</tr>
+				<tr>
+					<td valign="bottom" colspan="2" class="Features">
+
+<span class="FeatureIcons">
+
+
+
+
+
+
+
+</span>
+
+</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+<tr><td>&nbsp;</td></tr>
+
+
+<table class="MainHeadingTable" width="99%" border="0" align="center">
+	<tr>
+
+		<td class="MainHeadingSecondary" width="135">
+			$224,900
+			
+
+		</td>
+		<td class="MainHeadingSecondary" colspan="2">
+		 Morgans' Grant / South March 9008, M-Kanata, Nepean, Ottawa, Eastern 8, Ontario</td>
+
+		</td>
+	</tr>
+</table><br>
+<table width="99%"  align="center">
+
+	<tr>
+		<td class="NonPadded" colspan="2">
+			<table width="100%" border="0">
+				<tr>
+					<td valign="top" width="150">
+						<a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6710909">
+						<img class="PhotoResults" alt='686688                   ' src='http://images.mls.ca/listings/reb76/lowres/8/686688_1.jpg'></A>
+					</td>
+					<td  valign="top" width="300">
+
+						<span class="Label" id="ReferenceNumber"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6710909">MLS&reg;: 686688                   </A> </span><span class='PropResultsRealEstateType'>( Single Family ) </span>
+						<div class="Text">Nice townhome with huge upside. Plenty of space waiting for your personal touches. Entertaining liv/dining area. Main floor family rm highlighted by wood burning fireplace. Spacious bright kitchen with patio doors leading to fenced yard. Larger maste</div>				
+						
+						<div style="padding-top:3px"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6710909">For More Information</a></div>
+					     </div>
+					</td>
+					<td class="NonPadded" width="290" height="140" valign="top" rowspan="2">
+
+						<table width="100%" border="0" cellpadding="0" align="right">
+							
+									<tr>
+										<td align="center" width="80" valign="top">
+										
+											<img src="http://images.mls.ca/individual/lowres/1067747.jpg" width="55" height="72"alt="IAN STIRLING">
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+										    IAN  STIRLING
+										       
+										       
+                                         </div>
+											
+											Salesperson
+											
+
+							                
+									        
+									        
+                                                   <div>Telephone: 613-564-0021</div>
+
+                                                
+                                	        
+                                            
+                                                      <div><a href="javascript:EmailRealtor(6946038,'/AlD4qS3y8yghSdT0TEDLw','686688', 3, '6710909');">Email REALTOR®</a><br></div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.ianstirling.com&t=ind" target="_blank">REALTOR® Website</a><br></div>
+                                                
+										</td>
+									</tr>
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+									     <td valign="top">
+									        <img src="http://images.mls.ca/organization/en-CA/lowres/1114030.jpg" width="75" height="36"alt="CENTURY 21 CAPITAL REALTY INC., BROKERAGE, INDEPENDENTLY OWNED & OPERATED"></td>
+
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>CENTURY 21 CAPITAL REALTY INC., BROKERAGE, INDEPENDENTLY OWNED & OPERATED</div>
+											
+											<div>851 RICHMOND ROAD<br>OTTAWA, Ontario &nbsp; K2A 3X2<br></div>
+										    
+										      
+										    
+                                                      <div>Telephone: 613-564-0021</div>
+                                                
+                                                      <div>Toll Free: 866-331-2121</div>
+
+                                                
+                                                      <div>Fax: 613-564-0026</div>
+                                                
+                                	        
+                                            
+                                	        
+                                            
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+								
+						</table>
+					</td>
+				</tr>
+				<tr>
+
+					<td valign="bottom" colspan="2" class="Features">
+
+<span class="FeatureIcons">
+
+
+
+
+
+
+
+
+</span>
+
+</td>
+				</tr>
+
+			</table>
+		</td>
+	</tr>
+<tr><td>&nbsp;</td></tr>
+
+
+<table class="MainHeadingTable" width="99%" border="0" align="center">
+	<tr>
+		<td class="MainHeadingSecondary" width="135">
+			$224,900
+			
+
+		</td>
+
+		<td class="MainHeadingSecondary" colspan="2">
+		 Emerald Meadows 9010, M-Kanata, Nepean, Ottawa, Eastern 8, Ontario</td>
+
+		</td>
+	</tr>
+</table><br>
+<table width="99%"  align="center">
+	<tr>
+		<td class="NonPadded" colspan="2">
+			<table width="100%" border="0">
+
+				<tr>
+					<td valign="top" width="150">
+						<a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6862907">
+						<img class="PhotoResults" alt='690658                   ' src='http://images.mls.ca/listings/reb76/lowres/8/690658_1.jpg'></A>
+					</td>
+					<td  valign="top" width="300">
+						<span class="Label" id="ReferenceNumber"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6862907">MLS&reg;: 690658                   </A> </span><span class='PropResultsRealEstateType'>( Single Family ) </span>
+
+						<div class="Text">Pride of Ownership!Located on a quiet street close to schools,parks & shopping. Sunken ceramic entrance. Livingroom features a corner gas fireplace and bay window. The bright upper level features 2 bdrms and loft which could be easily converted to 3r</div>				
+						
+						<div style="padding-top:3px"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6862907">For More Information</a></div>
+					     </div>
+					</td>
+					<td class="NonPadded" width="290" height="140" valign="top" rowspan="2">
+						<table width="100%" border="0" cellpadding="0" align="right">
+							
+									<tr>
+										<td align="center" width="80" valign="top">
+
+										
+											<img src="http://images.mls.ca/individual/lowres/1096321.jpg" width="55" height="72"alt="HELEN HAYES">
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+										    HELEN  HAYES
+										       
+										       
+                                         </div>
+											
+											Salesperson
+											
+
+							                
+									        
+									        
+                                                   <div>Telephone: 613-836-9660</div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="javascript:EmailRealtor(6729870,'Qot5ATLLqm1cSZIDetfQkA','690658', 3, '6862907');">Email REALTOR®</a><br></div>
+                                                
+                                	        
+                                            
+                                                      <div><a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.helenhayes.ca&t=ind" target="_blank">REALTOR® Website</a><br></div>
+
+                                                
+										</td>
+									</tr>
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+									     <td valign="top">
+									        </td>
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>COLDWELL BANKER SARAZEN REALTY, BROKERAGE</div>
+											
+											<div>300 EAGLESON ROAD, SUITE 46<br>KANATA, Ontario &nbsp; K2M 1C9<br></div>
+
+										    
+										      
+										    
+                                                      <div>Telephone: 613-831-4455</div>
+                                                
+                                                      <div>Toll Free: 800-311-1210</div>
+                                                
+                                                      <div>Fax: 613-831-4781</div>
+                                                
+                                	        
+                                            
+                                	        
+                                            
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+								
+						</table>
+
+					</td>
+				</tr>
+				<tr>
+					<td valign="bottom" colspan="2" class="Features">
+
+<span class="FeatureIcons">
+
+
+
+
+
+
+
+</span>
+
+</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+<tr><td>&nbsp;</td></tr>
+
+
+<table class="MainHeadingTable" width="99%" border="0" align="center">
+	<tr>
+
+		<td class="MainHeadingSecondary" width="135">
+			$224,900
+			
+
+		</td>
+		<td class="MainHeadingSecondary" colspan="2">
+		 Copeland Park 5406, Ottawa Far West, Ottawa, Eastern 8, Ontario</td>
+
+		</td>
+	</tr>
+</table><br>
+<table width="99%"  align="center">
+
+	<tr>
+		<td class="NonPadded" colspan="2">
+			<table width="100%" border="0">
+				<tr>
+					<td valign="top" width="150">
+						<a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6879093">
+						<img class="PhotoResults" alt='690996                   ' src='http://images.mls.ca/listings/reb76/lowres/6/690996_1.jpg'></A>
+					</td>
+					<td  valign="top" width="300">
+
+						<span class="Label" id="ReferenceNumber"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6879093">MLS&reg;: 690996                   </A> </span><span class='PropResultsRealEstateType'>( Single Family ) </span>
+						<div class="Text">Price Reduced @ 1163 Maitland! Are you looking for an affordable, updated home without moving to the outskirts?  This is it!  Updated kitchen, and newer full bathroom in finished basement with recent carpeting. Bay window in living room provides lots</div>				
+						
+						<div style="padding-top:3px"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6879093">For More Information</a></div>
+					     </div>
+					</td>
+					<td class="NonPadded" width="290" height="140" valign="top" rowspan="2">
+
+						<table width="100%" border="0" cellpadding="0" align="right">
+							
+									<tr>
+										<td align="center" width="80" valign="top">
+										
+											<img src="http://images.mls.ca/individual/lowres/1162073.jpg" width="55" height="72"alt="MICHAEL FINNERTY">
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+										    MICHAEL  FINNERTY
+										       
+										       
+                                         </div>
+											
+											Salesperson
+											
+
+							                
+									        
+									        
+                                                   <div>Telephone: 613-596-5353</div>
+
+                                                
+                                	        
+                                            
+                                                      <div><a href="javascript:EmailRealtor(6729357,'sbnz7sN9wq1GF9mNWdhnoQ','690996', 3, '6879093');">Email REALTOR®</a><br></div>
+                                                
+                                	        
+                                            
+										</td>
+									</tr>
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+									     <td valign="top">
+									        <img src="http://images.mls.ca/organization/en-CA/lowres/default/remaxoa.gif" width="75" height="36"alt="RE/MAX METRO-CITY REALTY LIMITED, BROKERAGE"></td>
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>RE/MAX METRO-CITY REALTY LIMITED, BROKERAGE</div>
+
+											
+											<div>2255 CARLING AVENUE, SUITE 101<br>OTTAWA, Ontario &nbsp; K2B 7Z5<br></div>
+										    
+										      
+										    
+                                                      <div>Telephone: 613-596-5353</div>
+                                                
+                                                      <div>Fax: 613-596-4495</div>
+                                                
+                                	        
+                                            
+                                	        
+                                            
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+
+								
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td valign="bottom" colspan="2" class="Features">
+
+<span class="FeatureIcons">
+
+
+
+
+
+
+
+</span>
+
+</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+<tr><td>&nbsp;</td></tr>
+
+
+<table class="MainHeadingTable" width="99%" border="0" align="center">
+	<tr>
+		<td class="MainHeadingSecondary" width="135">
+			$224,900
+			
+
+		</td>
+		<td class="MainHeadingSecondary" colspan="2">
+		 Glencairn / Hazeldean 9003, M-Kanata, Nepean, Ottawa, Eastern 8, Ontario</td>
+
+		</td>
+	</tr>
+
+</table><br>
+<table width="99%"  align="center">
+	<tr>
+		<td class="NonPadded" colspan="2">
+			<table width="100%" border="0">
+				<tr>
+					<td valign="top" width="150">
+						<a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6884839">
+						<img class="PhotoResults" alt='691074                   ' src='http://images.mls.ca/listings/reb76/lowres/4/691074_1.jpg'></A>
+					</td>
+
+					<td  valign="top" width="300">
+						<span class="Label" id="ReferenceNumber"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6884839">MLS&reg;: 691074                   </A> </span><span class='PropResultsRealEstateType'>( Single Family ) </span>
+						<div class="Text">Beautiful, bright, open concept, 3 bedroom, 2 bath townhouse in family oriented area. Features: hardwood in LR/DR, ceramic tile in foyer & powder room, inside entry to garage, palladium window at back, finished rec room with fireplace, central air, s</div>				
+						
+						<div style="padding-top:3px"><a href = "PropertyDetails.aspx?vd=&SearchURL=%3fMode%3d0%26Page%3d1%26vs%3dResidential%26ret%3d300%26sts%3d0-0%26beds%3d2-0%26baths%3d2-0%26aid%3d2959%252c2971%252c2996%252c3094%252c3130%252c3158%26MapURL%3d%253fAreaID%253d2862%26tte%3d1%26tt%3d1%252c2%26mp%3d175000-250000-0%26mrt%3d0-0-4%26trt%3d2%26of%3d1%26ps%3d25%26o%3dA&Mode=0&PropertyID=6884839">For More Information</a></div>
+					     </div>
+					</td>
+
+					<td class="NonPadded" width="290" height="140" valign="top" rowspan="2">
+						<table width="100%" border="0" cellpadding="0" align="right">
+							
+									<tr>
+										<td align="center" width="80" valign="top">
+										
+											<img src="http://images.mls.ca/individual/lowres/1067081.jpg" width="55" height="72"alt="PAUL DESROCHERS">
+																		
+										<td valign="top">
+										<div class='LabelSecondary'>
+										    PAUL G DESROCHERS
+										       
+										       
+                                         </div>
+
+											
+											Broker
+											
+
+							                
+									        
+									        
+                                                   
+                                                
+                                                   <div>Telephone: 613-831-4844</div>
+                                                
+                                	        
+                                            
+                                                      
+                                                
+                                                      <div><a href="javascript:EmailRealtor(9796219,'rXjQAR2pv+vm3RNEHzLC/g','691074', 3, '6884839');">Email REALTOR®</a><br></div>
+                                                
+                                	        
+                                            
+                                                      
+                                                
+                                                      <div><a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.pauldesrochers.com&t=ind" target="_blank">REALTOR® Website</a><br></div>
+                                                
+										</td>
+									</tr>
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+
+									     <td valign="top">
+									        <img src="http://images.mls.ca/organization/en-CA/lowres/1125368.jpg" width="75" height="36"alt="KELLER WILLIAMS VIP REALTY, BROKERAGE"></td>
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>KELLER WILLIAMS VIP REALTY, BROKERAGE</div>
+											
+											<div>245 STAFFORD ROAD, W, 3RD FLR.<br>OTTAWA, Ontario &nbsp; K2H 9E8<br></div>
+										    
+										      
+										    
+                                                      
+                                                
+                                                      
+                                                
+                                                      <div>Telephone: 613-829-1818</div>
+
+                                                
+                                                      <div>Fax: 613-829-3223</div>
+                                                
+                                	        
+                                            
+                                	        
+                                            
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+								
+									<tr>
+										<td align="center" width="80" valign="top">
+										
+											<img src="http://images.mls.ca/individual/lowres/1092171.jpg" width="55" height="72"alt="DOROTHY DESROCHERS">
+																		
+										<td valign="top">
+
+										<div class='LabelSecondary'>
+										    DOROTHY E DESROCHERS
+										       
+										       
+                                         </div>
+											
+											Broker
+											
+
+							                
+									        
+									        
+                                                   <div>Telephone: 613-831-4844</div>
+                                                
+                                                   
+                                                
+                                	        
+                                            
+                                                      <div><a href="javascript:EmailRealtor(7246557,'rCv6KSdv0bJvnU9AK7MrIA','691074', 3, '6884839');">Email REALTOR®</a><br></div>
+                                                
+                                                      
+                                                
+                                	        
+                                            
+                                                      <div><a href="http://www.mls.ca//redirect.aspx?r=http%3a%2f%2fwww.pauldesrochers.com&t=ind" target="_blank">REALTOR® Website</a><br></div>
+                                                
+                                                      
+                                                
+										</td>
+
+									</tr>
+									<tr><td colspan="2">&nbsp;</td></tr>	
+									<tr>
+									     <td valign="top">
+									        <img src="http://images.mls.ca/organization/en-CA/lowres/1125368.jpg" width="75" height="36"alt="KELLER WILLIAMS VIP REALTY, BROKERAGE"></td>
+									
+										<td  valign="top">
+											<div class='LabelSecondary'>KELLER WILLIAMS VIP REALTY, BROKERAGE</div>
+											
+											<div>245 STAFFORD ROAD, W, 3RD FLR.<br>OTTAWA, Ontario &nbsp; K2H 9E8<br></div>
+
+										    
+										      
+										    
+                                                      <div>Telephone: 613-829-1818</div>
+                                                
+                                                      <div>Fax: 613-829-3223</div>
+                                                
+                                                      
+                                                
+                                                      
+                                                
+                                	        
+                                            
+                                	        
+                                            
+                                      </td>
+                                      <tr><td colspan="2">&nbsp;</td></tr>
+									</tr>
+								
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td valign="bottom" colspan="2" class="Features">
+
+<span class="FeatureIcons">
+
+
+
+
+
+
+
+
+</span>
+
+</td>
+
+				</tr>
+			</table>
+		</td>
+	</tr>
+<tr><td>&nbsp;</td></tr>
+
+</td></tr>
+<tr><td>
+<hr size="1" width="98%">
+
+<div class="Pager">
+<div class="Label"><span id="_ctl0_PropertyResults_BottomPaging_lblHeader" class="PageHeader">Page 1 of 5 - 118 matches found</span></div>
+
+<div class="Label"><span id="_ctl0_PropertyResults_BottomPaging_lblPages"> <b>1</b>  <a href="/PropertyResults.aspx?Page=2&Mode=0&vs=Residential&ret=300&sts=0-0&beds=2-0&baths=2-0&aid=2959%2c2971%2c2996%2c3094%2c3130%2c3158&MapURL=%3fAreaID%3d2862&tte=1&tt=1%2c2&mp=175000-250000-0&mrt=0-0-4&trt=2&of=1&ps=25&o=A">2</a>  <a href="/PropertyResults.aspx?Page=3&Mode=0&vs=Residential&ret=300&sts=0-0&beds=2-0&baths=2-0&aid=2959%2c2971%2c2996%2c3094%2c3130%2c3158&MapURL=%3fAreaID%3d2862&tte=1&tt=1%2c2&mp=175000-250000-0&mrt=0-0-4&trt=2&of=1&ps=25&o=A">3</a>  <a href="/PropertyResults.aspx?Page=4&Mode=0&vs=Residential&ret=300&sts=0-0&beds=2-0&baths=2-0&aid=2959%2c2971%2c2996%2c3094%2c3130%2c3158&MapURL=%3fAreaID%3d2862&tte=1&tt=1%2c2&mp=175000-250000-0&mrt=0-0-4&trt=2&of=1&ps=25&o=A">4</a>  <a href="/PropertyResults.aspx?Page=5&Mode=0&vs=Residential&ret=300&sts=0-0&beds=2-0&baths=2-0&aid=2959%2c2971%2c2996%2c3094%2c3130%2c3158&MapURL=%3fAreaID%3d2862&tte=1&tt=1%2c2&mp=175000-250000-0&mrt=0-0-4&trt=2&of=1&ps=25&o=A">5</a> &nbsp;&nbsp; <a href="/PropertyResults.aspx?Page=2&Mode=0&vs=Residential&ret=300&sts=0-0&beds=2-0&baths=2-0&aid=2959%2c2971%2c2996%2c3094%2c3130%2c3158&MapURL=%3fAreaID%3d2862&tte=1&tt=1%2c2&mp=175000-250000-0&mrt=0-0-4&trt=2&of=1&ps=25&o=A">Next</a> </span></div>
+</div>
+<hr size="1" width="98%">
+
+</td></tr>
+</table>
+							</td>
+						</tr>
+					</table>
+					</div>
+				</td>
+			</tr>
+			<tr><td>
+<span id="FOOTER" class="footer">
+
+	<span id="_ctl0_Prefooter__ctl0_txtFooter" class="footerleft"><sup>©</sup>1998-2008 The Canadian Real Estate Association. All rights reserved. MLS<sup>®</sup>, Multiple Listing Service<sup>®</sup>, and all related graphics are trademarks of The Canadian Real Estate Association. REALTOR<sup>®</sup>, REALTORS<sup>®</sup>, and all related graphics are trademarks of REALTOR<sup>®</sup> Canada Inc. a corporation owned by The Canadian Real Estate Association and the National Association of REALTORS<sup>®</sup>.  Site hosted by <a href="http://www.primus.ca" target="_new" id="PrimusLink">Primus Telecommunications Canada inc</a></span>
+
+<span>
+
+<a href='/nobot/index.aspx'><img src="http://www.mls.ca//presentation/images/cheater.gif" id="_ctl0_Prefooter__ctl0_imgMachineID" border="0" width="10" height="10" Title="203.101" /></a> 
+
+</td></tr>
+		</table>
+</div>	
+
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAgLS5MOpBQLp5uDYBpXfpmyW5x5CVy0YW8x1oANjRe7w" />
+<SCRIPT LANGUAGE='Javascript'>if (window != top) top.location.href = location.href;</SCRIPT></form>
+
+</body>
+</HTML>
