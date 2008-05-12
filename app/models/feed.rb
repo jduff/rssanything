@@ -4,27 +4,43 @@ require "hpricot"
 
 class Feed < ActiveRecord::Base
   has_many :items
+  
+  def self.refresh(id)
+    feed = Feed.find_by_id(id)
+    
+    parsed_items = feed.execute
+
+    existing_items = Item.find(:all, :select =>"guid",
+      :conditions => ["feed_id =? and guid in (?)", feed.id, parsed_items.collect(&:guid)])
+
+    existing_items.collect!(&:guid) unless existing_items.empty?
+
+    new_items = parsed_items.reject {|item| existing_items.include?(item.guid)}
+
+    feed.items << new_items unless new_items.empty?
+
+    feed.last_published = Time.now
+
+    feed.save unless new_items.empty?
+  end
 
   def execute
     doc = Hpricot(fetch_page(link))
     pages = []
     
     if !more_regexp.blank?
-      links = doc.search(more_regexp).collect do |link|
-        fix_relative_url(link.search("a[@href]").first.attributes["href"])
-      end
+      links = doc.search(more_regexp)[0].search("a[@href]").collect do |link|
+        fix_relative_url(link.attributes["href"])
+      end.uniq
       
-      0.upto([links.length, more].sort[0]) do |i|
-        pages << Hpricot(fetch_page(links[i]))
+      1.upto([links.length, more].sort[0]) do |i|
+        pages << Hpricot(fetch_page(links[i-1]))
       end
     end
     pages << doc
     
     items = pages.collect { |page| parse_page(page) }.flatten.uniq
   end
-  
-  
-  
   
   def parse_page(doc)
     links = doc.search(link_regexp).collect do |link|
