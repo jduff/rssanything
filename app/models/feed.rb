@@ -5,8 +5,8 @@ require "hpricot"
 class Feed < ActiveRecord::Base
   has_many :items
   
-  def self.refresh(id)
-    feed = Feed.find_by_id(id)
+  def self.refresh(feed)
+    feed = feed.is_a?(Feed) ? feed : Feed.find_by_id(id)
     
     parsed_items = feed.execute
 

@@ -11,6 +11,6 @@ class FeedsControllerTest < ActionController::TestCase
     
     get :show, :id => feeds(:mls).id
     
-    assert_equal 11, assigns(:feed).items.length
+    assert_equal 2, assigns(:feed).items.length
   end
 end
