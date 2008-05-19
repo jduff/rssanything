@@ -25,16 +25,24 @@ set :deploy_via, :remote_cache
 # set :scm, :subversion
 
 desc "FCGI is already running, so we don't really need the spinner script, but we have it create the initial symlink for us"
-task :spinner, :roles => :app do
+task :restart_web_server, :roles => :app do
   run "rm -rf /home/#{user}/public_html/#{application};ln -s #{current_path}/public /home/#{user}/public_html/#{application}"
 end
+after "deploy:start", :restart_web_server
 
 desc "Restart the FCGI Process"
 task :restart, :roles => :app do
   run "cd #{current_path}; killall dispatch.fcgi"
-  cleanup
 end
+after "restart_web_server", :restart
 
+desc "copy configuration files into the current directory"
+task :prepare_configuration, :roles => :app do
+  run "cd #{deploy_to}/shared; cp database.yml #{current_path}/config/database.yml"
+end
+before "deploy:migrate", :prepare_configuration
+
+after "deploy:restart", :"deploy:cleanup"
 
 role :app, domain
 role :web, domain
