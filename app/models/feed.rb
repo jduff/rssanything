@@ -28,7 +28,7 @@ class Feed < ActiveRecord::Base
   end
 
   def execute
-    doc = Hpricot(fetch_page(link))
+    doc = Hpricot(fetch_page(self.link))
     pages = []
     
     if !more_regexp.blank?
