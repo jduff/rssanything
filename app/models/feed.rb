@@ -5,23 +5,26 @@ require "hpricot"
 class Feed < ActiveRecord::Base
   has_many :items
   
-  def self.refresh(feed)
-    feed = feed.is_a?(Feed) ? feed : Feed.find_by_id(id)
-    
-    parsed_items = feed.execute
+  def self.refresh(id)
+    feed = Feed.find_by_id(id)
+    feed.refresh if feed
+  end
+  
+  def refresh
+    parsed_items = self.execute
 
     existing_items = Item.find(:all, :select =>"guid",
-      :conditions => ["feed_id =? and guid in (?)", feed.id, parsed_items.collect(&:guid)])
+      :conditions => ["feed_id =? and guid in (?)", self.id, parsed_items.collect(&:guid)])
 
     existing_items.collect!(&:guid) unless existing_items.empty?
 
     new_items = parsed_items.reject {|item| existing_items.include?(item.guid)}
 
-    feed.items << new_items unless new_items.empty?
+    self.items << new_items unless new_items.empty?
 
-    feed.last_published = Time.now
+    self.last_published = Time.now
 
-    feed.save unless new_items.empty?
+    self.save unless new_items.empty?
   end
 
   def execute

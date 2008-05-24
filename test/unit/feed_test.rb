@@ -8,7 +8,7 @@ class FeedTest < ActiveSupport::TestCase
     
     assert_equal 2, feeds(:mls).items.length
     
-    Feed.refresh feeds(:mls)
+    feeds(:mls).refresh
     
     assert_equal 11, feeds(:mls).items.length
   end

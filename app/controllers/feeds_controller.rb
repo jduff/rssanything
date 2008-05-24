@@ -12,7 +12,7 @@ class FeedsController < ApplicationController
             
     feed.save!
     
-    Feed.refresh params[:id]
+    feed.refresh
     
     redirect_to :action => :show, :id => feed.id
   end
